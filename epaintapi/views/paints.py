@@ -32,7 +32,6 @@ class Paints(ViewSet):
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def list(self, request):
-        """info about GET request goes here"""
 
         paints = Paint.objects.all()
 
@@ -46,3 +45,23 @@ class Paints(ViewSet):
 
         except Exception as ex:
             return Response({"message": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+
+    def retrieve(self, request, pk=None):
+
+        try:
+            paint = Paint.objects.get(pk=pk)
+
+            serializer = PaintSerializer(
+                paint, many=False, context={"request": request}
+            )
+
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        except Paint.DoesNotExist:
+
+            return Response(
+                {"message": "The requested Paint does not exist"},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as ex:
+            return HttpResponseServerError(ex)
