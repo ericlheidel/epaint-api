@@ -82,7 +82,6 @@ class Paints(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
-    #!!! NOT WORKING
     def update(self, request, pk=None):
 
         paint = Paint.objects.get(pk=pk)
