@@ -32,9 +32,9 @@ class Paint(SafeDeleteModel):
 
     hex = models.CharField(max_length=7, null=True, blank=True)
 
-    rgb = models.CharField(max_length=12, null=True, blank=True)
+    rgb = models.CharField(max_length=14, null=True, blank=True)
 
-    cmyk = models.CharField(max_length=12, null=True, blank=True)
+    cmyk = models.CharField(max_length=19, null=True, blank=True)
 
     paint_type = models.ForeignKey(
         PaintType, on_delete=models.DO_NOTHING, related_name="paints"
