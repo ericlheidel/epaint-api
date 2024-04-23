@@ -5,8 +5,8 @@
     "fields": {
       "color": "Acid",
       "paint_number": "6005",
-      "image_one": "media/BLACK/acid_1.jpg",
-      "image_two": "media/BLACK/acid_2.jpg",
+      "image_one": "./media/BLACK/acid_1.jpg",
+      "image_two": "./media/BLACK/acid_2.jpg",
       "hex": null,
       "rgb": null,
       "cmyk": null,
