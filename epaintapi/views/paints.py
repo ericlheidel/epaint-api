@@ -35,6 +35,7 @@ class Paints(ViewSet):
     def list(self, request):
 
         search_text = request.query_params.get("search_text", None)
+        order_by = request.query_params.get("order_by", None)
 
         paints = Paint.objects.all()
 
@@ -46,6 +47,9 @@ class Paints(ViewSet):
                 | Q(rgb__contains=search_text)
                 | Q(cmyk__contains=search_text)
             )
+
+        if order_by is not None:
+            paints = paints.order_by(order_by)
 
         try:
 
