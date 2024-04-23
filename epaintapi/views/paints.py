@@ -81,3 +81,24 @@ class Paints(ViewSet):
             )
         except Exception as ex:
             return HttpResponseServerError(ex)
+
+    #!!! NOT WORKING
+    def update(self, request, pk=None):
+
+        paint = Paint.objects.get(pk=pk)
+
+        if "hex" in request.data:
+            paint.hex = request.data["hex"]
+
+        if "rgb" in request.data:
+            paint.rgb = request.data["rgb"]
+
+        if "cmyk" in request.data:
+            paint.cmyk = request.data["cmyk"]
+
+        paint.full_clean()
+        paint.save()
+
+        return Response(
+            {"message": "Paint successfully update"}, status=status.HTTP_204_NO_CONTENT
+        )
