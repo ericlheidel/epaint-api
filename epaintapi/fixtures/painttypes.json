@@ -1,0 +1,30 @@
+[
+  {
+    "model": "epaintapi.painttype",
+    "pk": 1,
+    "fields": {
+      "name": "BLACK"
+    }
+  },
+  {
+    "model": "epaintapi.painttype",
+    "pk": 2,
+    "fields": {
+      "name": "GOLD"
+    }
+  },
+  {
+    "model": "epaintapi.painttype",
+    "pk": 3,
+    "fields": {
+      "name": "WHITE"
+    }
+  },
+  {
+    "model": "epaintapi.painttype",
+    "pk": 4,
+    "fields": {
+      "name": "SPECIAL"
+    }
+  }
+]
