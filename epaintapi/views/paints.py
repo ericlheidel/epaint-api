@@ -2,6 +2,7 @@ from django.core.exceptions import *
 from django.http import *
 from rest_framework.viewsets import *
 from rest_framework.response import *
+from django.db.models import Q
 import base64
 from rest_framework import serializers, status
 from rest_framework.permissions import *
@@ -33,7 +34,18 @@ class Paints(ViewSet):
 
     def list(self, request):
 
+        search_text = request.query_params.get("search_text", None)
+
         paints = Paint.objects.all()
+
+        if search_text is not None:
+            paints = paints.filter(
+                Q(color__contains=search_text)
+                | Q(paint_number__contains=search_text)
+                | Q(hex__contains=search_text)
+                | Q(rgb__contains=search_text)
+                | Q(cmyk__contains=search_text)
+            )
 
         try:
 
