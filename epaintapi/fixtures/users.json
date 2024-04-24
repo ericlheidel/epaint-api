@@ -3,7 +3,7 @@
     "model": "auth.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$150000$fHDURJBIASpx$trZS1MWc6YiNe5EYNBap+P+zMAwpNgNbUZH/b9bgvdw=",
+      "password": "pbkdf2_sha256$720000$1TpO35OZF6elHhrgQvqMaB$lcg+t3tfktcxxRRJnET7J98MgsuM+Jynbdg0Z0vu6Hg=",
       "last_login": null,
       "is_superuser": false,
       "username": "eric",
@@ -12,7 +12,7 @@
       "email": "eric@ericheidel.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2019-10-10T19:12:13.676Z",
+      "date_joined": "2023-10-10T19:12:13.676Z",
       "groups": [],
       "user_permissions": []
     }
