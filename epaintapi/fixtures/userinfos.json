@@ -1,0 +1,11 @@
+[
+  {
+    "model": "epaintapi.userinfo",
+    "pk": 1,
+    "fields": {
+      "phone_number": "432-555-2134",
+      "address": "212 Broadway Nashville, TN 37377",
+      "user": 1
+    }
+  }
+]
