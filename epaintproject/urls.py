@@ -8,6 +8,7 @@ from epaintapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r"paints", Paints, "paint")
+router.register(r"profile", Profiles, "profile")
 
 urlpatterns = [
     path("", include(router.urls)),
