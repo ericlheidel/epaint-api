@@ -9,5 +9,8 @@ python3 manage.py loaddata users
 python3 manage.py loaddata tokens
 python3 manage.py loaddata userinfos
 python3 manage.py loaddata painttypes
-python3 manage.py loaddata paints
+python3 manage.py loaddata paints_black
+python3 manage.py loaddata paints_gold
+python3 manage.py loaddata paints_white
+python3 manage.py loaddata paints_special
 

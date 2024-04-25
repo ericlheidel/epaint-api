@@ -6,11 +6,14 @@ from django.db.models import Q
 import base64
 from rest_framework import serializers, status
 from rest_framework.permissions import *
-from epaintapi.models import Paint
+from epaintapi.models import *
+from .painttypes import PaintTypeSerializer
 
 
 class PaintSerializer(serializers.ModelSerializer):
     """JSON Serializer for Paints"""
+
+    paint_type = PaintTypeSerializer(many=False)
 
     class Meta:
         model = Paint
@@ -24,6 +27,7 @@ class PaintSerializer(serializers.ModelSerializer):
             "rgb",
             "cmyk",
             "paint_type_id",
+            "paint_type",
         )
 
 
@@ -36,6 +40,7 @@ class Paints(ViewSet):
 
         search_text = request.query_params.get("search_text", None)
         order_by = request.query_params.get("order_by", None)
+        paint_type_id = request.query_params.get("paint_type_id", None)
 
         paints = Paint.objects.all()
 
@@ -50,6 +55,9 @@ class Paints(ViewSet):
 
         if order_by is not None:
             paints = paints.order_by(order_by)
+
+        if paint_type_id is not None:
+            paints = paints.filter(paint_type__id=paint_type_id)
 
         try:
 

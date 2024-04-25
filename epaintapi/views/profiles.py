@@ -1,21 +1,26 @@
 from django.contrib.auth.models import User
-from rest_framework import serializers, status
 from django.http import *
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from rest_framework.response import *
 from rest_framework.viewsets import *
+from rest_framework.serializers import *
+from rest_framework.permissions import *
+from rest_framework.response import *
 from epaintapi.models import *
 
 
-class UserSerializer(serializers.ModelSerializer):
+class UserSerializer(ModelSerializer):
 
     class Meta:
         model = User
-        fields = ("username", "first_name", "last_name")
+        fields = (
+            "username",
+            "first_name",
+            "last_name",
+            "email",
+        )
         depth = 1
 
 
-class UserInfoSerializer(serializers.ModelSerializer):
+class UserInfoSerializer(ModelSerializer):
 
     user = UserSerializer(many=False)
 

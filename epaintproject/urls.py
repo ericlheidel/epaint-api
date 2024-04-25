@@ -9,6 +9,7 @@ from epaintapi.views import *
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r"paints", Paints, "paint")
 router.register(r"profile", Profiles, "profile")
+router.register(r"painttypes", PaintTypes, "painttype")
 
 urlpatterns = [
     path("", include(router.urls)),
