@@ -1,0 +1,30 @@
+[
+  {
+    "model": "epaintapi.paint",
+    "pk": 382,
+    "fields": {
+      "color": "Vintage",
+      "paint_number": "VNTG400",
+      "image_one": "SPECIAL/vintage_1.jpg",
+      "image_two": "SPECIAL/vintage_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 4
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 383,
+    "fields": {
+      "color": "Whiteout",
+      "paint_number": "WHT400",
+      "image_one": "SPECIAL/whiteout_1.jpg",
+      "image_two": "SPECIAL/whiteout_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 4
+    }
+  }
+]
