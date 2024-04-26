@@ -1,4 +1,5 @@
 from django.core.exceptions import *
+from django.core.files.base import *
 from django.http import *
 from rest_framework.viewsets import *
 from rest_framework.response import *
@@ -108,3 +109,44 @@ class Paints(ViewSet):
         return Response(
             {"message": "Paint successfully update"}, status=HTTP_204_NO_CONTENT
         )
+
+    def create(self, request):
+        new_paint = Paint()
+        new_paint.color = request.data["color"]
+        new_paint.paint_number = request.data["paint_number"]
+        new_paint.hex = request.data["hex"]
+        new_paint.rgb = request.data["rgb"]
+        new_paint.cmyk = request.data["cmyk"]
+        new_paint.paint_type_id = request.data["paint_type_id"]
+
+        if "image_one" in request.data:
+            format, imgstr = request.data["image_one"].split(";base64")
+            ext = format.split("?")[-1]
+            data = ContentFile(
+                base64.b64decode(imgstr),
+                name=f'{new_paint.id}-{request.data["name"]}.{ext}',
+            )
+
+            new_paint.image_one = data
+
+        if "image_two" in request.data:
+            format, imgstr = request.data["image_two"].split(";base64")
+            ext = format.split("?")[-1]
+            data = ContentFile(
+                base64.b64decode(imgstr),
+                name=f'{new_paint.id}-{request.data["name"]}.{ext}',
+            )
+
+            new_paint.image_two = data
+
+        try:
+            new_paint.full_clean()
+
+            new_paint.save()
+
+            serializer = PaintSerializer(new_paint, context={"request": request})
+
+            return Response(serializer.data, status=HTTP_201_CREATED)
+
+        except ValidationError as err:
+            return Response({"error": err.message}, status=HTTP_400_BAD_REQUEST)
