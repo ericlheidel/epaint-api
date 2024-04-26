@@ -10,6 +10,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r"paints", Paints, "paint")
 router.register(r"profile", Profiles, "profile")
 router.register(r"painttypes", PaintTypes, "painttype")
+router.register(r"sizes", Sizes, "size")
 
 urlpatterns = [
     path("", include(router.urls)),

@@ -13,4 +13,5 @@ python3 manage.py loaddata paints_black
 python3 manage.py loaddata paints_gold
 python3 manage.py loaddata paints_white
 python3 manage.py loaddata paints_special
+python3 manage.py loaddata sizes
 

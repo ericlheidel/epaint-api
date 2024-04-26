@@ -4,13 +4,14 @@ from rest_framework.viewsets import *
 from rest_framework.response import *
 from django.db.models import Q
 import base64
-from rest_framework import serializers, status
 from rest_framework.permissions import *
+from rest_framework.serializers import *
+from rest_framework.status import *
 from epaintapi.models import *
 from .painttypes import PaintTypeSerializer
 
 
-class PaintSerializer(serializers.ModelSerializer):
+class PaintSerializer(ModelSerializer):
     """JSON Serializer for Paints"""
 
     paint_type = PaintTypeSerializer(many=False)
@@ -65,28 +66,26 @@ class Paints(ViewSet):
                 paints, many=True, context={"request": request}
             )
 
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.data, status=HTTP_200_OK)
 
         except Exception as ex:
-            return Response({"message": ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"message": ex.args[0]}, status=HTTP_404_NOT_FOUND)
 
     def retrieve(self, request, pk=None):
 
         try:
             paint = Paint.objects.get(pk=pk)
-
             serializer = PaintSerializer(
                 paint, many=False, context={"request": request}
             )
-
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.data, status=HTTP_200_OK)
 
         except Paint.DoesNotExist:
-
             return Response(
                 {"message": "The requested Paint does not exist"},
-                status=status.HTTP_404_NOT_FOUND,
+                status=HTTP_404_NOT_FOUND,
             )
+
         except Exception as ex:
             return HttpResponseServerError(ex)
 
@@ -107,5 +106,5 @@ class Paints(ViewSet):
         paint.save()
 
         return Response(
-            {"message": "Paint successfully update"}, status=status.HTTP_204_NO_CONTENT
+            {"message": "Paint successfully update"}, status=HTTP_204_NO_CONTENT
         )

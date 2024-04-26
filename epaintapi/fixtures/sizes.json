@@ -1,0 +1,26 @@
+[
+  {
+    "model": "epaintapi.size",
+    "pk": 1,
+    "fields": {
+      "size": "400ml",
+      "price": 9.99
+    }
+  },
+  {
+    "model": "epaintapi.size",
+    "pk": 2,
+    "fields": {
+      "size": "600ml",
+      "price": 14.99
+    }
+  },
+  {
+    "model": "epaintapi.size",
+    "pk": 3,
+    "fields": {
+      "size": "800ml",
+      "price": 18.99
+    }
+  }
+]
