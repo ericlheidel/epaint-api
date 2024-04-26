@@ -48,3 +48,19 @@ class PaintTypes(ViewSet):
 
         except Exception as ex:
             return HttpResponseServerError(ex)
+
+    def create(self, request):
+
+        new_paint_type = PaintType()
+        new_paint_type.name = request.data["name"]
+
+        try:
+            new_paint_type.full_clean()
+            new_paint_type.save()
+            serializer = PaintTypeSerializer(
+                new_paint_type, context={"request": request}
+            )
+            return Response(serializer.data, status=HTTP_201_CREATED)
+
+        except ValidationError as err:
+            return Response({"error": err.messages}, status=HTTP_400_BAD_REQUEST)

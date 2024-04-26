@@ -1,0 +1,1 @@
+from .paints import PaintTests
