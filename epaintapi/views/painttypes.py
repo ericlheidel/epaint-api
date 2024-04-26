@@ -1,10 +1,10 @@
-from django.core.exceptions import ValidationError
-from django.http import HttpResponseServerError
-from rest_framework.viewsets import ViewSet
-from rest_framework.response import Response
-from rest_framework.serializers import ModelSerializer
+from django.core.exceptions import *
+from django.http import *
+from rest_framework.viewsets import *
+from rest_framework.response import *
+from rest_framework.serializers import *
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from rest_framework import status
+from rest_framework.status import *
 from epaintapi.models import *
 
 
@@ -24,18 +24,27 @@ class PaintTypes(ViewSet):
 
     def list(self, request):
 
-        paint_types = PaintType.objects.get(all)
+        paint_types = PaintType.objects.all()
 
         serializer = PaintTypeSerializer(
             paint_types, many=True, context={"request": request}
         )
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.data, status=HTTP_200_OK)
 
     def retrieve(self, request, pk=None):
 
-        paint_type = PaintType.objects.get(pk=pk)
+        try:
+            paint_type = PaintType.objects.get(pk=pk)
+            serializer = PaintTypeSerializer(
+                paint_type, many=False, context={"request": request}
+            )
+            return Response(serializer.data, status=HTTP_200_OK)
 
-        serializer = PaintTypeSerializer(
-            paint_type, many=False, context={"request": request}
-        )
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        except PaintType.DoesNotExist:
+            return Response(
+                {"message": "The requested painttype does not exist"},
+                status=HTTP_404_NOT_FOUND,
+            )
+
+        except Exception as ex:
+            return HttpResponseServerError(ex)
