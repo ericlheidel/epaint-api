@@ -4,6 +4,7 @@ from rest_framework.viewsets import *
 from rest_framework.serializers import *
 from rest_framework.permissions import *
 from rest_framework.response import *
+from rest_framework.status import *
 from epaintapi.models import *
 
 
@@ -49,7 +50,7 @@ class Profiles(ViewSet):
                 current_user_info, many=False, context={"request": request}
             )
 
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.data, status=HTTP_200_OK)
 
         except Exception as ex:
             return HttpResponseBadRequest(ex)
