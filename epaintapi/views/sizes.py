@@ -30,3 +30,18 @@ class Sizes(ViewSet):
         serializer = SizeSerializer(sizes, many=True, context={"request": request})
 
         return Response(serializer.data, status=HTTP_200_OK)
+
+    def create(self, request):
+
+        new_size = Size()
+        new_size.size = request.data["size"]
+        new_size.price = request.data["price"]
+
+        try:
+            new_size.full_clean()
+            new_size.save()
+            serializer = SizeSerializer(new_size, context={"request": request})
+            return Response(serializer.data, status=HTTP_201_CREATED)
+
+        except ValidationError as err:
+            return Response({"error": err.messages}, status=HTTP_201_CREATED)

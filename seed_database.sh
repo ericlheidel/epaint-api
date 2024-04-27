@@ -14,4 +14,7 @@ python3 manage.py loaddata paints_gold
 python3 manage.py loaddata paints_white
 python3 manage.py loaddata paints_special
 python3 manage.py loaddata sizes
+python3 manage.py loaddata payments
+python3 manage.py loaddata orders
+python3 manage.py loaddata orderpaints
 
