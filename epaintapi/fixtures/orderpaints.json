@@ -1,0 +1,22 @@
+[
+  {
+    "model": "epaintapi.orderpaint",
+    "pk": 1,
+    "fields": {
+      "price": 9.99,
+      "order_id": 1,
+      "paint_id": 1,
+      "size_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.orderpaint",
+    "pk": 2,
+    "fields": {
+      "price": 14.99,
+      "order_id": 1,
+      "paint_id": 2,
+      "size_id": 2
+    }
+  }
+]
