@@ -5,3 +5,4 @@ from .paints import Paints
 from .profiles import Profiles
 from .painttypes import PaintTypes
 from .sizes import Sizes
+from .cart import Cart

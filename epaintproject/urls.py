@@ -12,6 +12,7 @@ router.register(r"profile", Profiles, "profile")
 router.register(r"painttypes", PaintTypes, "painttype")
 router.register(r"orders", Orders, "order")
 router.register(r"sizes", Sizes, "size")
+router.register(r"cart", Cart, "cart")
 urlpatterns = [
     path("", include(router.urls)),
     path("register", register_user),
