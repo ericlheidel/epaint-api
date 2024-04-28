@@ -1,4 +1,3 @@
-import datetime
 from django.http import *
 from rest_framework.viewsets import *
 from rest_framework.serializers import *
@@ -29,6 +28,7 @@ class OrderSerializer(ModelSerializer):
 
     items = OrderPaintSerializer(many=True)
     total = SerializerMethodField()
+    number_of_items = SerializerMethodField()
 
     class Meta:
         model = Order
@@ -39,6 +39,7 @@ class OrderSerializer(ModelSerializer):
             "payment_type_id",
             "items",
             "total",
+            "number_of_items",
         )
 
     def get_total(self, obj):
@@ -46,6 +47,11 @@ class OrderSerializer(ModelSerializer):
         for item in obj.items.all():
             total += item.size.price
         return total
+
+    def get_number_of_items(self, obj):
+        items = obj.items.all()
+        number_of_items = len(items)
+        return number_of_items
 
 
 class Orders(ViewSet):
@@ -65,10 +71,11 @@ class Orders(ViewSet):
                 status=HTTP_404_NOT_FOUND,
             )
 
-    # This is for Testing Purposes Only
-    # def create(self, request):
 
-    #     new_order = Order()
-    #     new_order.created_date = datetime.datetime.now
-    #     new_order.user_id = request.auth.user
-    #     new_order.payment_type = None
+# This is for Testing Purposes Only
+# def create(self, request):
+
+#     new_order = Order()
+#     new_order.created_date = datetime.datetime.now
+#     new_order.user_id = request.auth.user
+#     new_order.payment_type = None

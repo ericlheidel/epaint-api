@@ -24,4 +24,10 @@ class Cart(ViewSet):
             open_order.full_clean()
             open_order.save()
 
+        item = OrderPaint()
+        item.product = Paint.objects.get(pk=request.data["paint_id"])
+        item.order = open_order
+        item.full_clean()
+        item.save()
+
         return Response({}, status=HTTP_204_NO_CONTENT)
