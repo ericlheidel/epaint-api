@@ -4,6 +4,11 @@ from rest_framework.status import *
 from rest_framework.test import APITestCase
 
 
+# Tests include:
+# list# retrieve
+# create (this is in setUp)
+
+
 class PaintTypeTests(APITestCase):
     def setUp(self) -> None:
 

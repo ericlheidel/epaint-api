@@ -4,6 +4,10 @@ from rest_framework.status import *
 from rest_framework.test import APITestCase
 
 
+# Tests include:
+# list (which only gets the profile of the Authenticated user)
+
+
 class ProfileTests(APITestCase):
     def setUp(self) -> None:
 

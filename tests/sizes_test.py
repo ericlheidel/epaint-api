@@ -4,6 +4,11 @@ from rest_framework.status import *
 from rest_framework.test import APITestCase
 
 
+# Tests include:
+# list
+# create (this is in setUp)
+
+
 class SizeTests(APITestCase):
     def setUp(self) -> None:
 

@@ -1,7 +1,13 @@
 import json
-import datetime
 from rest_framework.status import *
 from rest_framework.test import APITestCase
+
+
+# Tests include:
+# list
+# retrieve
+# update
+# create (this is in setUp)
 
 
 class PaintTests(APITestCase):
