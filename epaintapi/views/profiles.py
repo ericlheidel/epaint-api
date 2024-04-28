@@ -1,3 +1,4 @@
+import datetime
 from django.contrib.auth.models import User
 from django.http import *
 from rest_framework.viewsets import *
@@ -81,5 +82,18 @@ class Profiles(ViewSet):
 
                 return Response(order_data)
 
-            except Order.DoesNotExist as ex:
-                return Response({"message": ex.args[0]}, status=HTTP_404_NOT_FOUND)
+            except Order.DoesNotExist:
+                open_order = Order()
+                open_order.created_date = datetime.datetime.now()
+                open_order.user = request.auth.user
+                open_order.payment_type = None
+                open_order.full_clean()
+                open_order.save()
+
+            # item = OrderPaint()
+            # item.product = Paint.objects.get(pk=request.data["paint_id"])
+            # item.order = open_order
+            # item.full_clean()
+            # item.save()
+
+            return Response({}, status=HTTP_204_NO_CONTENT)
