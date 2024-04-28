@@ -58,7 +58,7 @@ class Paints(ViewSet):
         if order_by:
             paints = paints.order_by(order_by)
 
-        if paint_type_id is not None:
+        if paint_type_id:
             paints = paints.filter(paint_type__id=paint_type_id)
 
         try:
