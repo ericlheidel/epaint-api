@@ -90,7 +90,9 @@ class Profiles(ViewSet):
                 open_order.full_clean()
                 open_order.save()
 
-            return Response({}, status=HTTP_204_NO_CONTENT)
+            return Response(
+                {"message": "Cart successfully created..."}, status=HTTP_204_NO_CONTENT
+            )
 
         if request.method == "POST":
 
