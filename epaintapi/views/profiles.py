@@ -107,10 +107,9 @@ class Profiles(ViewSet):
                 open_order.save()
 
             order_paint = OrderPaint()
-            order_paint.order = Order.objects.get(pk=request.data["order_id"])
+            order_paint.order = open_order
             order_paint.paint = Paint.objects.get(pk=request.data["paint_id"])
             order_paint.size = Size.objects.get(pk=request.data["size_id"])
-
             order_paint.full_clean()
             order_paint.save()
 
