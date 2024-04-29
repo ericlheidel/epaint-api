@@ -10,24 +10,11 @@ from .orders import OrderSerializer, OrderPaintSerializer
 
 class Cart(ViewSet):
 
-    # def create(self, request):
-
-    #     try:
-    #         open_order = Order.objects.get(
-    #             user=request.auth.user, payment_type__isnull=True
-    #         )
-
-    #     except Order.DoesNotExist:
-    #         open_order = Order()
-    #         open_order.created_date = datetime.datetime.now()
-    #         open_order.user = request.auth.user
-    #         open_order.payment_type = None
-    #         open_order.full_clean()
-    #         open_order.save()
-
-    #     return Response({}, status=HTTP_204_NO_CONTENT)
-
     def list(self, request):
+        """The GET/list method will get a users cart"""
+        """A users cart is an open, unpaid order"""
+        """If a user has no open order when the cart is requested,"""
+        """TheGET/list method will create an order, therefore creating an empty cart"""
 
         try:
             open_order = Order.objects.get(user=request.auth.user, payment_type=None)
