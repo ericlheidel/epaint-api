@@ -29,6 +29,7 @@ class OrderSerializer(ModelSerializer):
     items = OrderPaintSerializer(many=True)
     total = SerializerMethodField()
     number_of_items = SerializerMethodField()
+    is_completed = SerializerMethodField()
 
     class Meta:
         model = Order
@@ -37,6 +38,7 @@ class OrderSerializer(ModelSerializer):
             "created_date",
             "user_id",
             "payment_type_id",
+            "is_completed",
             "items",
             "total",
             "number_of_items",
@@ -52,6 +54,9 @@ class OrderSerializer(ModelSerializer):
         items = obj.items.all()
         number_of_items = len(items)
         return number_of_items
+
+    def get_is_completed(self, obj):
+        return obj.payment_type_id is not None
 
 
 class Orders(ViewSet):
@@ -71,11 +76,14 @@ class Orders(ViewSet):
                 status=HTTP_404_NOT_FOUND,
             )
 
+    def list(self, request):
 
-# This is for Testing Purposes Only
-# def create(self, request):
+        try:
+            orders = Order.objects.filter(user=request.auth.user)
+            serializer = OrderSerializer(
+                orders, many=True, context={"request": request}
+            )
+            return Response(serializer.data, status=HTTP_200_OK)
 
-#     new_order = Order()
-#     new_order.created_date = datetime.datetime.now
-#     new_order.user_id = request.auth.user
-#     new_order.payment_type = None
+        except Order.DoesNotExist as err:
+            return Response({"message": err.args[0]}, HTTP_404_NOT_FOUND)
