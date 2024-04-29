@@ -4,5 +4,6 @@ from .orders import Orders
 from .paints import Paints
 from .profiles import Profiles
 from .painttypes import PaintTypes
+from .payments import Payments
 from .sizes import Sizes
 from .cart import Cart
