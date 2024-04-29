@@ -56,8 +56,3 @@ class OrderTests(APITestCase):
         self.assertEqual(json_response["hex"], None)
         self.assertEqual(json_response["rgb"], None)
         self.assertEqual(json_response["cmyk"], None)
-
-    # def test_create_order_via_slash_cart(self):
-
-    #     url = "/cart"
-    #     dat = {}
