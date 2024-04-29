@@ -31,3 +31,18 @@ class Cart(ViewSet):
         item.save()
 
         return Response({}, status=HTTP_204_NO_CONTENT)
+
+    def destroy(self, request, pk=None):
+
+        try:
+            order = Order.objects.get(user=request.auth.user, payment_type=None)
+            order_paint = OrderPaint.objects.get(pk=pk, order=order)
+            order_paint.delete()
+
+            return Response({}, status=HTTP_204_NO_CONTENT)
+
+        except OrderPaint.DoesNotExist as err:
+            return Response({"message": err.args[0]}, status=HTTP_404_NOT_FOUND)
+
+        except Exception as err:
+            return Response({}, status=HTTP_500_INTERNAL_SERVER_ERROR)
