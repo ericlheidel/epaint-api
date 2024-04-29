@@ -3,7 +3,6 @@
     "model": "epaintapi.orderpaint",
     "pk": 3,
     "fields": {
-      "price": 9.99,
       "order_id": 2,
       "paint_id": 3,
       "size_id": 1
@@ -13,7 +12,6 @@
     "model": "epaintapi.orderpaint",
     "pk": 4,
     "fields": {
-      "price": 14.99,
       "order_id": 2,
       "paint_id": 4,
       "size_id": 2

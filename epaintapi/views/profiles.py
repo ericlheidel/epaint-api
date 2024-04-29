@@ -90,10 +90,24 @@ class Profiles(ViewSet):
                 open_order.full_clean()
                 open_order.save()
 
-            # item = OrderPaint()
-            # item.product = Paint.objects.get(pk=request.data["paint_id"])
-            # item.order = open_order
-            # item.full_clean()
-            # item.save()
-
             return Response({}, status=HTTP_204_NO_CONTENT)
+
+        # if request.method == "POST":
+
+        #     try:
+        #         open_order = Order.objects.get(
+        #             user=request.auth.user, payment_type=None
+        #         )
+
+        #     except Order.DoesNotExist as err:
+        #         open_order = Order()
+        #         open_order.created_date = datetime.datetime.now()
+        #         open_order.user = request.auth.user
+        #         open_order.full_clean()
+        #         open_order.save()
+
+        #     order_paint = Size.objects()
+        #     order_paint.price = Paint.objects.get(pk=request.data["paint_id"])
+        #     order_paint.paint = Paint.objects.get(pk=request.data["paint_id"])
+        #     order_paint.size = Size.objects.get(pk=request.data["size_id"])
+        #     order_paint.
