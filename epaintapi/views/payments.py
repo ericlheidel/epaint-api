@@ -41,3 +41,18 @@ class Payments(ViewSet):
         serializer = PaymentSerializer(new_payment, context={"request": request})
 
         return Response(serializer.data, status=HTTP_201_CREATED)
+
+    def destroy(elf, request, pk=None):
+
+        try:
+            payment = Payment.objects.get(pk=pk)
+            payment.delete()
+            return Response({}, status=HTTP_204_NO_CONTENT)
+
+        except Payment.DoesNotExist as err:
+            return Response({"message": err.args[0]}, status=HTTP_404_NOT_FOUND)
+
+        except Exception as err:
+            return Response(
+                {"message": err.args[0]}, status=HTTP_500_INTERNAL_SERVER_ERROR
+            )
