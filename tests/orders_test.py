@@ -34,3 +34,30 @@ class OrderTests(APITestCase):
 
         self.assertEqual(response.status_code, HTTP_201_CREATED)
         self.assertEqual(json_response["name"], "name")
+
+        # Create a paint with the created paint type
+        url = "/paints"
+        data = {
+            "color": "color1",
+            "paint_number": "1111",
+            "paint_type_id": 1,
+            "hex": None,
+            "rgb": None,
+            "cmyk": None,
+        }
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.post(url, data, format="json")
+        json_response = json.loads(response.content)
+
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+        self.assertEqual(json_response["color"], "color1")
+        self.assertEqual(json_response["paint_number"], "1111")
+        self.assertEqual(json_response["paint_type_id"], 1)
+        self.assertEqual(json_response["hex"], None)
+        self.assertEqual(json_response["rgb"], None)
+        self.assertEqual(json_response["cmyk"], None)
+
+    # def test_create_order_via_slash_cart(self):
+
+    #     url = "/cart"
+    #     dat = {}
