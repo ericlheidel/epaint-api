@@ -62,38 +62,9 @@ class Profiles(ViewSet):
     def cart(self, request):
         """Shopping Cart Manipulation"""
 
-        if request.method == "GET":
-
-            try:
-                open_order = Order.objects.get(
-                    user=request.auth.user, payment_type=None
-                )
-                items = OrderPaint.objects.filter(order=open_order)
-                items_serializer = OrderPaintSerializer(
-                    items, many=True, context={"request": request}
-                )
-
-                order_serializer = OrderSerializer(
-                    open_order, many=False, context={"request": request}
-                )
-                order_data = order_serializer.data
-                order_data["number_of_items"] = len(items_serializer.data)
-                order_data["items"] = items_serializer.data
-
-                return Response(order_data)
-
-            except Order.DoesNotExist:
-                open_order = Order()
-                open_order.created_date = datetime.datetime.now()
-                open_order.user = request.auth.user
-                open_order.payment_type = None
-                open_order.full_clean()
-                open_order.save()
-
-            return Response(
-                {"message": "Cart successfully created..."}, status=HTTP_204_NO_CONTENT
-            )
-
+        """The POST method will add a paint to the cart"""
+        """If an order does not exist when a paint is added to the cart,"""
+        """This will create an order, therefore creating a cart, and add the paint to the order"""
         if request.method == "POST":
 
             try:
