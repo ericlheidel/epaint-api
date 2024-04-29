@@ -56,3 +56,23 @@ class Payments(ViewSet):
             return Response(
                 {"message": err.args[0]}, status=HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+    def update(self, request, pk=None):
+
+        try:
+            updated_payment = Payment.objects.get(pk=pk)
+            updated_payment.name = request.data["name"]
+            updated_payment.acct_number = request.data["acct_number"]
+            updated_payment.ex_date = request.data["ex_date"]
+            updated_payment.full_clean()
+            updated_payment.save()
+
+            return Response({}, status=HTTP_204_NO_CONTENT)
+
+        except Payment.DoesNotExist as err:
+            return Response({"message": err.args[0]}, status=HTTP_404_NOT_FOUND)
+
+        except Exception as err:
+            return Response(
+                {"message": err.args[0]}, status=HTTP_500_INTERNAL_SERVER_ERROR
+            )
