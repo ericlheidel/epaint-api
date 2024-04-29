@@ -5,16 +5,45 @@ from rest_framework.status import *
 from rest_framework.exceptions import *
 from django.contrib.auth.models import User
 from epaintapi.models import *
+from .orders import OrderSerializer, OrderPaintSerializer
 
 
 class Cart(ViewSet):
 
-    def create(self, request):
+    # def create(self, request):
+
+    #     try:
+    #         open_order = Order.objects.get(
+    #             user=request.auth.user, payment_type__isnull=True
+    #         )
+
+    #     except Order.DoesNotExist:
+    #         open_order = Order()
+    #         open_order.created_date = datetime.datetime.now()
+    #         open_order.user = request.auth.user
+    #         open_order.payment_type = None
+    #         open_order.full_clean()
+    #         open_order.save()
+
+    #     return Response({}, status=HTTP_204_NO_CONTENT)
+
+    def list(self, request):
 
         try:
-            open_order = Order.objects.get(
-                user=request.auth.user, payment_type__isnull=True
+            open_order = Order.objects.get(user=request.auth.user, payment_type=None)
+            items = OrderPaint.objects.filter(order=open_order)
+            items_serializer = OrderPaintSerializer(
+                items, many=True, context={"request": request}
             )
+
+            order_serializer = OrderSerializer(
+                open_order, many=False, context={"request": request}
+            )
+            order_data = order_serializer.data
+            order_data["number_of_items"] = len(items_serializer.data)
+            order_data["items"] = items_serializer.data
+
+            return Response(order_data)
 
         except Order.DoesNotExist:
             open_order = Order()
@@ -24,7 +53,7 @@ class Cart(ViewSet):
             open_order.full_clean()
             open_order.save()
 
-        return Response({}, status=HTTP_204_NO_CONTENT)
+        return Response({"message": "Order created..."}, status=HTTP_201_CREATED)
 
     def destroy(self, request, pk=None):
 
