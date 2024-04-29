@@ -13,6 +13,7 @@ router.register(r"painttypes", PaintTypes, "painttype")
 router.register(r"orders", Orders, "order")
 router.register(r"sizes", Sizes, "size")
 router.register(r"cart", Cart, "cart")
+router.register(r"payments", Payments, "payment")
 
 urlpatterns = [
     path("", include(router.urls)),
