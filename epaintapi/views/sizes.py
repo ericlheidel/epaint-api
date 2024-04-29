@@ -45,3 +45,11 @@ class Sizes(ViewSet):
 
         except ValidationError as err:
             return Response({"error": err.messages}, status=HTTP_201_CREATED)
+
+    def retrieve(self, request, pk=None):
+
+        size = Size.objects.get(pk=pk)
+
+        serializer = SizeSerializer(size, many=False, context={"request": request})
+
+        return Response(serializer.data, status=HTTP_200_OK)
