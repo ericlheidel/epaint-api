@@ -92,22 +92,32 @@ class Profiles(ViewSet):
 
             return Response({}, status=HTTP_204_NO_CONTENT)
 
-        # if request.method == "POST":
+        if request.method == "POST":
 
-        #     try:
-        #         open_order = Order.objects.get(
-        #             user=request.auth.user, payment_type=None
-        #         )
+            try:
+                open_order = Order.objects.get(
+                    user=request.auth.user, payment_type=None
+                )
 
-        #     except Order.DoesNotExist as err:
-        #         open_order = Order()
-        #         open_order.created_date = datetime.datetime.now()
-        #         open_order.user = request.auth.user
-        #         open_order.full_clean()
-        #         open_order.save()
+            except Order.DoesNotExist:
+                open_order = Order()
+                open_order.created_date = datetime.datetime.now()
+                open_order.user = request.auth.user
+                open_order.full_clean()
+                open_order.save()
 
-        #     order_paint = Size.objects()
-        #     order_paint.price = Paint.objects.get(pk=request.data["paint_id"])
-        #     order_paint.paint = Paint.objects.get(pk=request.data["paint_id"])
-        #     order_paint.size = Size.objects.get(pk=request.data["size_id"])
-        #     order_paint.
+            order_paint = OrderPaint()
+            order_paint.order = Order.objects.get(pk=request.data["order_id"])
+            order_paint.paint = Paint.objects.get(pk=request.data["paint_id"])
+            order_paint.size = Size.objects.get(pk=request.data["size_id"])
+
+            order_paint.full_clean()
+            order_paint.save()
+
+            order_paint_json = OrderPaintSerializer(
+                order_paint, many=False, context={"request": request}
+            )
+
+            return Response(order_paint_json.data)
+
+        return Response({}, status=HTTP_405_METHOD_NOT_ALLOWED)
