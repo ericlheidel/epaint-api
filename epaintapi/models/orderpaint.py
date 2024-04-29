@@ -7,7 +7,7 @@ from .size import Size
 
 class OrderPaint(Model):
 
-    price = FloatField(validators=[MinValueValidator(0.00), MaxValueValidator(100.00)])
+    # price = FloatField(validators=[MinValueValidator(0.00), MaxValueValidator(100.00)])
 
     order = ForeignKey(Order, on_delete=DO_NOTHING, related_name="items")
 
