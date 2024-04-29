@@ -48,7 +48,7 @@ class OrderSerializer(ModelSerializer):
         total = 0
         for item in obj.items.all():
             total += item.size.price
-        return total
+        return round(total, 2)
 
     def get_number_of_items(self, obj):
         items = obj.items.all()
