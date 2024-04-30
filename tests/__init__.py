@@ -5,3 +5,4 @@ from .painttypes_test import PaintTypeTests
 from .profiles_test import ProfileTests
 from .registers_test import RegistersTests
 from .sizes_test import SizeTests
+from .payments_test import PaymentTests

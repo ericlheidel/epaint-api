@@ -110,7 +110,9 @@ class PaintTests(APITestCase):
     def test_update_paint(self):
 
         url = "/paints/1"
-        data = {"hex": "#000000"}
+        data = {
+            "hex": "#000000",
+        }
 
         # Edit the "hex": of a paint
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
