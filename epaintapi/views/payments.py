@@ -45,7 +45,7 @@ class Payments(ViewSet):
     def destroy(elf, request, pk=None):
 
         try:
-            payment = Payment.objects.get(pk=pk)
+            payment = Payment.objects.get(user=request.auth.user, pk=pk)
             payment.delete()
             return Response({}, status=HTTP_204_NO_CONTENT)
 
