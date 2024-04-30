@@ -76,3 +76,17 @@ class Payments(ViewSet):
             return Response(
                 {"message": err.args[0]}, status=HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+    def list(self, request):
+
+        try:
+            payments = Payment.objects.filter(user=request.auth.user)
+
+            serializer = PaymentSerializer(
+                payments, many=True, context={"message": request}
+            )
+
+            return Response(serializer.data, status=HTTP_200_OK)
+
+        except Payment.DoesNotExist as err:
+            return Response({"message": err.args[0]}, status=HTTP_404_NOT_FOUND)
