@@ -87,3 +87,19 @@ class Orders(ViewSet):
 
         except Order.DoesNotExist as err:
             return Response({"message": err.args[0]}, HTTP_404_NOT_FOUND)
+
+    def update(self, request, pk=None):
+
+        try:
+
+            payment_type_id = request.data["payment_type_id"]
+            payment_type_instance = Payment.objects.get(pk=payment_type_id)
+
+            order = Order.objects.get(user=request.auth.user, pk=pk)
+            order.payment_type_id = request.data["payment_type_id"]
+            order.save()
+
+            return Response({}, status=HTTP_204_NO_CONTENT)
+
+        except Order.DoesNotExist as err:
+            return Response({"message": err.args[0]}, status=HTTP_404_NOT_FOUND)
