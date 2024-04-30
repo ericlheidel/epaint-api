@@ -9,5 +9,16 @@
       "created_date": "2019-01-01",
       "user_id": 1
     }
+  },
+  {
+    "model": "epaintapi.payment",
+    "pk": 2,
+    "fields": {
+      "name": "AMEX",
+      "acct_number": "9999-1111-8888-2222",
+      "ex_date": "2024-04-01",
+      "created_date": "2017-01-01",
+      "user_id": 1
+    }
   }
 ]
