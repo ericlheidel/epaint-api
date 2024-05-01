@@ -91,10 +91,17 @@ class Orders(ViewSet):
         try:
             orders = Order.objects.filter(user=request.auth.user)
 
-            # is_completed = self.request.query_params.get("is_completed")
+            closed = self.request.query_params.get("closed")
 
-            # if is_completed is not False:
-            # orders = Order.objects.filter(is_completed)
+            if closed == "true":
+                orders = Order.objects.filter(
+                    user=request.auth.user, payment_type_id__isnull=False
+                )
+
+            if closed == "false":
+                orders = Order.objects.filter(
+                    user=request.auth.user, payment_type_id__isnull=True
+                )
 
             serializer = OrderSerializer(
                 orders, many=True, context={"request": request}
@@ -107,8 +114,6 @@ class Orders(ViewSet):
     def update(self, request, pk=None):
 
         try:
-
-            payment_type_id = request.data["payment_type_id"]
 
             order = Order.objects.get(user=request.auth.user, pk=pk)
             order.payment_type_id = request.data["payment_type_id"]
