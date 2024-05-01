@@ -4,6 +4,7 @@
     "pk": 2,
     "fields": {
       "created_date": "2024-04-01",
+      "purchase_date": "2024-04-05",
       "user_id": 2,
       "payment_type_id": 1
     }
@@ -13,6 +14,7 @@
     "pk": 3,
     "fields": {
       "created_date": "2023-04-01",
+      "purchase_date": null,
       "user_id": 2,
       "payment_type_id": null
     }

@@ -36,6 +36,7 @@ class OrderSerializer(ModelSerializer):
         fields = (
             "id",
             "created_date",
+            "purchase_date",
             "user_id",
             "payment_type_id",
             "is_completed",
@@ -80,6 +81,12 @@ class Orders(ViewSet):
 
         try:
             orders = Order.objects.filter(user=request.auth.user)
+
+            # is_completed = self.request.query_params.get("is_completed")
+
+            # if is_completed is not False:
+            # orders = Order.objects.filter(is_completed)
+
             serializer = OrderSerializer(
                 orders, many=True, context={"request": request}
             )
