@@ -12,3 +12,5 @@ class Order(Model):
     payment_type = ForeignKey(
         Payment, on_delete=DO_NOTHING, null=True, blank=True, related_name="orders"
     )
+
+    purchase_date = DateField(default="0000-00-00", null=True, blank=True)

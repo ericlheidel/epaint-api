@@ -4,6 +4,7 @@
     "pk": 1,
     "fields": {
       "created_date": "2024-03-01",
+      "purchase_date": null,
       "user_id": 1,
       "payment_type_id": null
     }
