@@ -8,7 +8,7 @@ from rest_framework.response import *
 from rest_framework.status import *
 from rest_framework.decorators import *
 from epaintapi.models import *
-from .orders import OrderPaintSerializer, OrderSerializer
+from .orders import OrderPaintSerializer
 
 
 class UserSerializer(ModelSerializer):
@@ -75,6 +75,7 @@ class Profiles(ViewSet):
             except Order.DoesNotExist:
                 open_order = Order()
                 open_order.created_date = datetime.datetime.now()
+                open_order.purchase_date = None
                 open_order.user = request.auth.user
                 open_order.full_clean()
                 open_order.save()

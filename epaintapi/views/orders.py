@@ -24,12 +24,20 @@ class OrderPaintSerializer(ModelSerializer):
         depth = 1
 
 
+class OrderPaymentSerializer(ModelSerializer):
+
+    class Meta:
+        model = Payment
+        fields = ("name",)
+
+
 class OrderSerializer(ModelSerializer):
 
     items = OrderPaintSerializer(many=True)
     total = SerializerMethodField()
     number_of_items = SerializerMethodField()
     is_completed = SerializerMethodField()
+    payment = OrderPaymentSerializer(many=False, source="payment_type")
 
     class Meta:
         model = Order
@@ -39,6 +47,7 @@ class OrderSerializer(ModelSerializer):
             "purchase_date",
             "user_id",
             "payment_type_id",
+            "payment",
             "is_completed",
             "items",
             "total",
@@ -100,10 +109,10 @@ class Orders(ViewSet):
         try:
 
             payment_type_id = request.data["payment_type_id"]
-            payment_type_instance = Payment.objects.get(pk=payment_type_id)
 
             order = Order.objects.get(user=request.auth.user, pk=pk)
             order.payment_type_id = request.data["payment_type_id"]
+            order.purchase_date = request.data["purchase_date"]
             order.save()
 
             return Response({}, status=HTTP_204_NO_CONTENT)
