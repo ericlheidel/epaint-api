@@ -36,6 +36,7 @@ class Cart(ViewSet):
             open_order = Order()
             open_order.created_date = datetime.datetime.now()
             open_order.user = request.auth.user
+            open_order.purchase_date = None
             open_order.payment_type = None
             open_order.full_clean()
             open_order.save()
