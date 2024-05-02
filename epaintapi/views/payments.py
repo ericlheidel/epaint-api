@@ -4,7 +4,6 @@ from rest_framework.viewsets import *
 from rest_framework.permissions import *
 from rest_framework.response import *
 from rest_framework.status import *
-
 from epaintapi.models import *
 from .profiles import UserInfoSerializer
 
