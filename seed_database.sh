@@ -19,3 +19,4 @@ python3 manage.py loaddata orders_user1
 python3 manage.py loaddata orders_user2
 python3 manage.py loaddata orderpaints_user1
 python3 manage.py loaddata orderpaints_user2
+python3 manage.py loaddata userimages

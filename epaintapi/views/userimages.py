@@ -62,11 +62,11 @@ class UserImages(ViewSet):
         except ValidationError as err:
             return Response({"error": err.args[0]}, status=HTTP_400_BAD_REQUEST)
 
-    def retrieve(self, request, pk=None):
+    def get(self, request, pk=None):
 
         try:
 
-            user_image = UserImage.objects.get(pk=pk, user=request.auth.user)
+            user_image = UserImage.objects.get(user=request.auth.user)
 
             serializer = UserImageSerializer(user_image, context={"request": request})
 
@@ -78,4 +78,21 @@ class UserImages(ViewSet):
         except Exception as err:
             return Response(
                 {"error": err.args[0]}, status=HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+    def destroy(self, request, pk=None):
+
+        try:
+
+            user_image = UserImage.objects.get(pk=pk, user=request.auth.user)
+            user_image.delete()
+
+            return Response({}, status=HTTP_204_NO_CONTENT)
+
+        except UserImage.DoesNotExist as err:
+            return Response({"message": err.args[0]}, status=HTTP_404_NOT_FOUND)
+
+        except Exception as err:
+            return Response(
+                {"message": err.args[0]}, status=HTTP_500_INTERNAL_SERVER_ERROR
             )

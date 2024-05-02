@@ -1,0 +1,10 @@
+[
+  {
+    "model": "epaintapi.userimage",
+    "pk": 1,
+    "fields": {
+      "image_path": "userimages/None-1.image",
+      "user_id": 1
+    }
+  }
+]
