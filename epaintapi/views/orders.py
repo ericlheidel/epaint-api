@@ -78,7 +78,7 @@ class Orders(ViewSet):
             serializer = OrderSerializer(order, context={"request": request})
             return Response(serializer.data)
 
-        except Order.DoesNotExist as ex:
+        except Order.DoesNotExist:
             return Response(
                 {
                     "message": "The requested order does not exist, or you do not have permission to access it."
