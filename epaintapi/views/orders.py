@@ -26,9 +26,17 @@ class OrderPaintSerializer(ModelSerializer):
 
 class OrderPaymentSerializer(ModelSerializer):
 
+    the_last_four_numbers = SerializerMethodField()
+
     class Meta:
         model = Payment
-        fields = ("name",)
+        fields = (
+            "name",
+            "the_last_four_numbers",
+        )
+
+    def get_the_last_four_numbers(self, obj):
+        return obj.acct_number[-4:]
 
 
 class OrderSerializer(ModelSerializer):

@@ -33,16 +33,16 @@ class UserImages(ViewSet):
         if "image_path" in request.data:
 
             # Adding encoding to test in Postman
-            file_data = request.data["image_path"].read()
-            imgstr = base64.b64encode(file_data).decode()
-            format, _ = request.data["image_path"].content_type.split("/")
+            # file_data = request.data["image_path"].read()
+            # imgstr = base64.b64encode(file_data).decode()
+            # format, _ = request.data["image_path"].content_type.split("/")
 
             # This should be the start of the code for use with the front end
-            # format, imgstr = request.data["image_path"].split(";base64,")
+            format, imgstr = request.data["image_path"].split(";base64,")
             ext = format.split("/")[-1]
             data = ContentFile(
                 base64.b64decode(imgstr),
-                name=f'{new_user_image.id}-{request.data["user_id"]}.{ext}',
+                name=f'{new_user_image.id}-{request.data["user_token"]}.{ext}',
             )
 
             new_user_image.image_path = data
@@ -73,7 +73,7 @@ class UserImages(ViewSet):
             return Response(serializer.data, status=HTTP_200_OK)
 
         except UserImage.DoesNotExist as err:
-            return Response({"error": err.args[0]}, status=HTTP_404_NOT_FOUND)
+            return Response([], status=HTTP_200_OK)
 
         except Exception as err:
             return Response(
