@@ -61,12 +61,12 @@ class SizeTests(APITestCase):
         self.assertEqual(response.status_code, HTTP_200_OK)
         self.assertEqual(len(json_response), 2)
 
-    # def test_get_one_sizes(self):
+    def test_get_one_sizes(self):
 
-    #     url = "/sizes/1"
+        url = "/sizes/1"
 
-    #     response = self.client.get(url, None, format="json")
-    #     json_response = json.loads(response.content)
-    #     self.assertEqual(response.status_code, HTTP_200_OK)
-    #     self.assertEqual(json_response["size"], "400ml")
-    #     self.assertEqual(json_response["price"], 9.99)
+        response = self.client.get(url, None, format="json")
+        json_response = json.loads(response.content)
+        self.assertEqual(response.status_code, HTTP_200_OK)
+        self.assertEqual(json_response["size"], "400ml")
+        self.assertEqual(json_response["price"], 9.99)
