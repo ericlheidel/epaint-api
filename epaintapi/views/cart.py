@@ -14,7 +14,7 @@ class Cart(ViewSet):
         """The GET/list method will get a users cart"""
         """A users cart is an open, unpaid order"""
         """If a user has no open order when the cart is requested,"""
-        """TheGET/list method will create an order, therefore creating an empty cart"""
+        """The GET/list method will create an order, therefore creating an empty cart"""
 
         try:
             open_order = Order.objects.get(user=request.auth.user, payment_type=None)
