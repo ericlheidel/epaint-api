@@ -62,7 +62,7 @@ class UserImages(ViewSet):
         except ValidationError as err:
             return Response({"error": err.args[0]}, status=HTTP_400_BAD_REQUEST)
 
-    def get(self, request, pk=None):
+    def retrieve(self, request, pk=None):
 
         try:
 
