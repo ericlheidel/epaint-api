@@ -93,6 +93,6 @@ class Profiles(ViewSet):
                 order_paint, many=False, context={"request": request}
             )
 
-            return Response(order_paint_json.data)
+            return Response(order_paint_json.data, HTTP_201_CREATED)
 
         return Response({}, status=HTTP_405_METHOD_NOT_ALLOWED)

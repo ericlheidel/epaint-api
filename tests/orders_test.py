@@ -56,11 +56,23 @@ class OrderTests(APITestCase):
         self.assertEqual(json_response["rgb"], None)
         self.assertEqual(json_response["cmyk"], None)
 
+        # Create a size
+        url = "/sizes"
+        data = {"size": "400ml", "price": 9.99}
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.post(url, data, format="json")
+        json_response = json.loads(response.content)
+
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+        self.assertEqual(json_response["size"], "400ml")
+        self.assertEqual(json_response["price"], 9.99)
+
     def test_create_an_order_via_cart_viewset(self):
 
         url_one = "/cart"
 
-        # When order exists, /cart GET should create an order
+        # When an order doesn't exist, /cart GET should create an order
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
         response = self.client.get(url_one, None, format="json")
@@ -74,3 +86,19 @@ class OrderTests(APITestCase):
         response = self.client.get(url_two, None, format="json")
         json_response = json.loads(response.content)
         self.assertEqual(len(json_response), 1)
+
+    def test_create_an_order_via_the_profile_viewset(self):
+
+        url_one = "/profile/cart"
+        data = {
+            "paint_id": 1,
+            "size_id": 1,
+        }
+
+        # When an order doesn't exist, /profile/cart to add
+        # a paint to the order should create an order
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.post(url_one, data, format="json")
+        json_response = json.loads(response.content)
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
