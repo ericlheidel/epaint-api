@@ -1,4 +1,5 @@
 import json
+import datetime
 from rest_framework.status import *
 from rest_framework.test import APITestCase
 from epaintapi.models import *
@@ -68,6 +69,20 @@ class OrderTests(APITestCase):
         self.assertEqual(json_response["size"], "400ml")
         self.assertEqual(json_response["price"], 9.99)
 
+        # Create a payment
+
+        url = "/payments"
+
+        data = {
+            "name": "Visa",
+            "acct_number": "1234-5678-8765-4321",
+            "ex_date": "2030-03-03",
+        }
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.post(url, data, format="json")
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+
     def test_create_an_order_via_cart_viewset(self):
 
         url_one = "/cart"
@@ -130,3 +145,41 @@ class OrderTests(APITestCase):
         response = self.client.get(url_three, None, format="json")
         json_response = json.loads(response.content)
         self.assertIsNotNone(json_response)
+
+    def test_update_order_with_payment(self):
+
+        url_one = "/cart"
+
+        # When an order doesn't exist, /cart GET should create an order
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_one, None, format="json")
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+
+        # Get order to confirm it was created
+
+        url_two = "/orders"
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_two, None, format="json")
+        json_response = json.loads(response.content)
+        self.assertEqual(len(json_response), 1)
+
+        # Update order with a payment (this closes an order)
+
+        url_three = "/orders/1"
+        data = {
+            "payment_type_id": 1,
+            "purchase_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+        }
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.put(url_three, data, format="json")
+        self.assertEqual(response.status_code, HTTP_204_NO_CONTENT)
+
+        # Get the order to confirm that payment_type_id is not null
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_three, None, format="json")
+        json_response = json.loads(response.content)
+        self.assertIsInstance(json_response["payment_type_id"], int)
