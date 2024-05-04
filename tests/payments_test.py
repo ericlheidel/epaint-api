@@ -84,6 +84,8 @@ class PaymentTests(APITestCase):
 
     def test_update_payment(self):
 
+        # Edit created payment
+
         url_one = "/payments/1"
         url_two = "/payments"
         data = {
@@ -92,17 +94,24 @@ class PaymentTests(APITestCase):
             "ex_date": "2040-04-04",
         }
 
-        # Edit payment
-
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+
         response = self.client.put(url_one, data, format="json")
         self.assertEqual(response.status_code, HTTP_204_NO_CONTENT)
 
         # Get payment to confirm update
 
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+
         response = self.client.get(url_two, None, format="json")
         json_response = json.loads(response.content)
         self.assertEqual(response.status_code, HTTP_200_OK)
-        self.assertEqual(json_response["name"], "Discover")
-        self.assertEqual(json_response["acct_number"], "8765-4321-1234-5678")
-        self.assertEqual(json_response["ex_date"], "2040-04-04")
+        self.assertEqual(json_response[0]["id"], 1)
+        self.assertEqual(json_response[0]["name"], "Discover")
+        self.assertEqual(json_response[0]["acct_number"], "8765-4321-1234-5678")
+        self.assertEqual(json_response[0]["ex_date"], "2040-04-04")
+        self.assertEqual(
+            json_response[0]["created_date"],
+            datetime.datetime.now().strftime("%Y-%m-%d"),
+        )
+        self.assertEqual(json_response[0]["user"], 1)
