@@ -54,6 +54,8 @@ class PaintTypeTests(APITestCase):
 
         url = "/painttypes"
 
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+
         response = self.client.get(url, None, format="json")
         json_response = json.loads(response.content)
         self.assertEqual(response.status_code, HTTP_200_OK)
@@ -62,6 +64,8 @@ class PaintTypeTests(APITestCase):
     def test_get_one_painttypyes(self):
 
         url = "/painttypes/1"
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
 
         response = self.client.get(url, None, format="json")
         json_response = json.loads(response.content)

@@ -56,14 +56,18 @@ class SizeTests(APITestCase):
 
         url = "/sizes"
 
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+
         response = self.client.get(url, None, format="json")
         json_response = json.loads(response.content)
         self.assertEqual(response.status_code, HTTP_200_OK)
         self.assertEqual(len(json_response), 2)
 
-    def test_get_one_sizes(self):
+    def test_get_one_size(self):
 
         url = "/sizes/1"
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
 
         response = self.client.get(url, None, format="json")
         json_response = json.loads(response.content)
