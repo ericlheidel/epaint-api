@@ -10,6 +10,24 @@
     }
   },
   {
+    "model": "epaintapi.orderpaint",
+    "pk": 3,
+    "fields": {
+      "order_id": 2,
+      "paint_id": 3,
+      "size_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.orderpaint",
+    "pk": 4,
+    "fields": {
+      "order_id": 2,
+      "paint_id": 4,
+      "size_id": 2
+    }
+  },
+  {
     "model": "epaintapi.order",
     "pk": 3,
     "fields": {
@@ -17,6 +35,24 @@
       "purchase_date": null,
       "user_id": 2,
       "payment_type_id": null
+    }
+  },
+  {
+    "model": "epaintapi.orderpaint",
+    "pk": 5,
+    "fields": {
+      "order_id": 3,
+      "paint_id": 100,
+      "size_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.orderpaint",
+    "pk": 6,
+    "fields": {
+      "order_id": 3,
+      "paint_id": 101,
+      "size_id": 3
     }
   }
 ]

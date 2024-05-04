@@ -3,24 +3,6 @@
     "model": "auth.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$720000$C3enLL0wYa7V7nwSKAIknT$SkmsAp8CuguehZGwa4GaYrqpZSCrFv46f0mXaUHfDBU=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "eric",
-      "first_name": "Eric",
-      "last_name": "Heidel",
-      "email": "eric@ericheidel.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-10-10T19:12:13.676Z",
-      "groups": [],
-      "user_permissions": []
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 2,
-    "fields": {
       "password": "pbkdf2_sha256$720000$T8k2K3WqrYPumcsf8bxR2i$FL3WPFcNLchmooIBom57AFHaprXQu6fDTiAprpLO9fE=",
       "last_login": null,
       "is_superuser": false,
@@ -30,7 +12,43 @@
       "email": "bob@bobbibby.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2023-09-10T19:12:13.676Z",
+      "date_joined": "2020-09-10T19:12:13.676Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$hrd2SDpZUHve3vqgT7tJ34$IX+Lt/ef4xOle/WoRSdDCI3bE7pwGirexAeMBnL08LQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tim",
+      "first_name": "Tim",
+      "last_name": "Tommy",
+      "email": "tim@timtommy.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-09-10T19:12:13.676Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$nrABnVn6b5sJmYBIakrqPz$W3+T3XAOmJxNAcHRL3zngQM105BfQhCsbRfvhKirN/I=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tom",
+      "first_name": "Tom",
+      "last_name": "Timmy",
+      "email": "tom@tomtimmy.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-09-10T19:12:13.676Z",
       "groups": [],
       "user_permissions": []
     }
