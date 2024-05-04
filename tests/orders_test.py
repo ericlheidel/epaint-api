@@ -56,21 +56,21 @@ class OrderTests(APITestCase):
         self.assertEqual(json_response["rgb"], None)
         self.assertEqual(json_response["cmyk"], None)
 
-        # def test_create_an_order_via_cart_viewset(self):
+    def test_create_an_order_via_cart_viewset(self):
 
-        #     url_one = "/cart"
+        url_one = "/cart"
 
-        #     # When order exists, /cart GET should create an order
+        # When order exists, /cart GET should create an order
 
-        #     self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        #     response = self.client.get(url_one, None, format="json")
-        #     self.assertEqual(response.status_code, HTTP_201_CREATED)
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_one, None, format="json")
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
 
-        #     # Get order to confirm it was created
+        # Get order to confirm it was created
 
-        #     url_two = "/orders"
+        url_two = "/orders"
 
-        #     self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        #     response = self.client.get(url_two, None, format="json")
-        #     json_response = json.load(response.content)
-        #     self.assertEqual(len(json_response), 1)
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_two, None, format="json")
+        json_response = json.loads(response.content)
+        self.assertEqual(len(json_response), 1)
