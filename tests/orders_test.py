@@ -102,3 +102,31 @@ class OrderTests(APITestCase):
         response = self.client.post(url_one, data, format="json")
         json_response = json.loads(response.content)
         self.assertEqual(response.status_code, HTTP_201_CREATED)
+
+    def test_get_one_order(self):
+
+        url_one = "/cart"
+
+        # When an order doesn't exist, /cart GET should create an order
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_one, None, format="json")
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+
+        # Get order to confirm it was created
+
+        url_two = "/orders"
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_two, None, format="json")
+        json_response = json.loads(response.content)
+        self.assertEqual(len(json_response), 1)
+
+        # Get the created order
+
+        url_three = "/orders/1"
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get(url_three, None, format="json")
+        json_response = json.loads(response.content)
+        self.assertIsNotNone(json_response)
