@@ -116,6 +116,8 @@ class PaintTests(APITestCase):
         url = "/paints/1"
         data = {
             "hex": "#000000",
+            "rgb": "R255 G255 B255",
+            "cmyk": "C100 M100 Y100 K100",
         }
 
         # Edit the "hex": of a paint
@@ -135,5 +137,5 @@ class PaintTests(APITestCase):
         self.assertEqual(json_response["paint_number"], "1111")
         self.assertEqual(json_response["paint_type_id"], 1)
         self.assertEqual(json_response["hex"], "#000000")
-        self.assertEqual(json_response["rgb"], None)
-        self.assertEqual(json_response["cmyk"], None)
+        self.assertEqual(json_response["rgb"], "R255 G255 B255")
+        self.assertEqual(json_response["cmyk"], "C100 M100 Y100 K100")
