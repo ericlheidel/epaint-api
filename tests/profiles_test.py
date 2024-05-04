@@ -1,5 +1,4 @@
 import json
-import datetime
 from rest_framework.status import *
 from rest_framework.test import APITestCase
 
