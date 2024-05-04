@@ -26,7 +26,9 @@ class OrderTests(APITestCase):
 
         # Create a paint type
         url = "/painttypes"
-        data = {"name": "name"}
+        data = {
+            "name": "name",
+        }
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
 
         response = self.client.post(url, data, format="json")
@@ -59,7 +61,10 @@ class OrderTests(APITestCase):
 
         # Create a size
         url = "/sizes"
-        data = {"size": "400ml", "price": 9.99}
+        data = {
+            "size": "400ml",
+            "price": 9.99,
+        }
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
         response = self.client.post(url, data, format="json")
@@ -85,22 +90,32 @@ class OrderTests(APITestCase):
 
     def test_create_an_order_via_cart_viewset(self):
 
-        url_one = "/cart"
-
         # When an order doesn't exist, /cart GET should create an order
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_one, None, format="json")
+        response = self.client.get("/cart", None, format="json")
         self.assertEqual(response.status_code, HTTP_201_CREATED)
 
         # Get order to confirm it was created
 
-        url_two = "/orders"
-
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_two, None, format="json")
+        response = self.client.get("/orders/1", None, format="json")
         json_response = json.loads(response.content)
-        self.assertEqual(len(json_response), 1)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 1,
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": None,
+                "user_id": 1,
+                "payment_type_id": None,
+                "payment": None,
+                "is_completed": False,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
 
     def test_create_an_order_via_the_profile_viewset(self):
 
@@ -120,66 +135,191 @@ class OrderTests(APITestCase):
 
     def test_get_one_order(self):
 
-        url_one = "/cart"
-
         # When an order doesn't exist, /cart GET should create an order
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_one, None, format="json")
+        response = self.client.get("/cart", None, format="json")
         self.assertEqual(response.status_code, HTTP_201_CREATED)
 
         # Get order to confirm it was created
 
-        url_two = "/orders"
-
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_two, None, format="json")
+        response = self.client.get("/orders/1", None, format="json")
         json_response = json.loads(response.content)
-        self.assertEqual(len(json_response), 1)
-
-        # Get the created order
-
-        url_three = "/orders/1"
-
-        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_three, None, format="json")
-        json_response = json.loads(response.content)
-        self.assertIsNotNone(json_response)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 1,
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": None,
+                "user_id": 1,
+                "payment_type_id": None,
+                "payment": None,
+                "is_completed": False,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
 
     def test_update_order_with_payment(self):
 
-        url_one = "/cart"
-
         # When an order doesn't exist, /cart GET should create an order
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_one, None, format="json")
+        response = self.client.get("/cart", None, format="json")
         self.assertEqual(response.status_code, HTTP_201_CREATED)
 
         # Get order to confirm it was created
 
-        url_two = "/orders"
-
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_two, None, format="json")
+        response = self.client.get("/orders/1", None, format="json")
         json_response = json.loads(response.content)
-        self.assertEqual(len(json_response), 1)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 1,
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": None,
+                "user_id": 1,
+                "payment_type_id": None,
+                "payment": None,
+                "is_completed": False,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
 
         # Update order with a payment (this closes an order)
 
-        url_three = "/orders/1"
         data = {
             "payment_type_id": 1,
             "purchase_date": datetime.datetime.now().strftime("%Y-%m-%d"),
         }
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.put(url_three, data, format="json")
+        response = self.client.put("/orders/1", data, format="json")
         self.assertEqual(response.status_code, HTTP_204_NO_CONTENT)
 
         # Get the order to confirm that payment_type_id is not null
 
         self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
-        response = self.client.get(url_three, None, format="json")
+        response = self.client.get("/orders/1", None, format="json")
         json_response = json.loads(response.content)
-        self.assertIsInstance(json_response["payment_type_id"], int)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 1,
+                "created_date": "2024-05-04",
+                "purchase_date": "2024-05-04",
+                "user_id": 1,
+                "payment_type_id": 1,
+                "payment": {
+                    "name": "Visa",
+                    "the_last_four_numbers": "4321",
+                },
+                "is_completed": True,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
+
+    def test_get_all_orders(self):
+
+        # When an order doesn't exist, /cart GET should create an order
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get("/cart", None, format="json")
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+
+        # Get order to confirm it was created
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get("/orders/1", None, format="json")
+        json_response = json.loads(response.content)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 1,
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": None,
+                "user_id": 1,
+                "payment_type_id": None,
+                "payment": None,
+                "is_completed": False,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
+
+        # Update order with a payment (this closes an order)
+
+        data = {
+            "payment_type_id": 1,
+            "purchase_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+        }
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.put("/orders/1", data, format="json")
+        self.assertEqual(response.status_code, HTTP_204_NO_CONTENT)
+
+        # Get the order to confirm that payment_type_id is not null
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get("/orders/1", None, format="json")
+        json_response = json.loads(response.content)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 1,
+                "created_date": "2024-05-04",
+                "purchase_date": "2024-05-04",
+                "user_id": 1,
+                "payment_type_id": 1,
+                "payment": {
+                    "name": "Visa",
+                    "the_last_four_numbers": "4321",
+                },
+                "is_completed": True,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
+
+        #     # When an order doesn't exist, /cart GET should create an order
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get("/cart", None, format="json")
+        self.assertEqual(response.status_code, HTTP_201_CREATED)
+
+        # Get order to confirm it was created
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get("/orders/2", None, format="json")
+        json_response = json.loads(response.content)
+        self.assertDictEqual(
+            json_response,
+            {
+                "id": 2,
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": None,
+                "user_id": 1,
+                "payment_type_id": None,
+                "payment": None,
+                "is_completed": False,
+                "items": [],
+                "total": 0,
+                "number_of_items": 0,
+            },
+        )
+
+        # Get the two orders to confirm they exist
+
+        self.client.credentials(HTTP_AUTHORIZATION="Token " + self.token)
+        response = self.client.get("/orders", None, format="json")
+        json_response = json.loads(response.content)
+        self.assertEqual(len(json_response), 2)
