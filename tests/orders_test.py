@@ -211,8 +211,8 @@ class OrderTests(APITestCase):
             json_response,
             {
                 "id": 1,
-                "created_date": "2024-05-04",
-                "purchase_date": "2024-05-04",
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": datetime.datetime.now().strftime("%Y-%m-%d"),
                 "user_id": 1,
                 "payment_type_id": 1,
                 "payment": {
@@ -275,8 +275,8 @@ class OrderTests(APITestCase):
             json_response,
             {
                 "id": 1,
-                "created_date": "2024-05-04",
-                "purchase_date": "2024-05-04",
+                "created_date": datetime.datetime.now().strftime("%Y-%m-%d"),
+                "purchase_date": datetime.datetime.now().strftime("%Y-%m-%d"),
                 "user_id": 1,
                 "payment_type_id": 1,
                 "payment": {
