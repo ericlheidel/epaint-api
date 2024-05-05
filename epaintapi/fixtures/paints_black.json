@@ -7,9 +7,9 @@
       "paint_number": "6005",
       "image_one": "BLACK/acid_1.jpg",
       "image_two": "BLACK/acid_2.jpg",
-      "hex": null,
-      "rgb": null,
-      "cmyk": null,
+      "hex": "#C6D32E",
+      "rgb": "R198 G211 B46",
+      "cmyk": "C8 M0 Y88 K17",
       "paint_type_id": 1
     }
   },
