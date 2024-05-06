@@ -1,5 +1,5 @@
 import json
-from django.http import HttpResponse, HttpResponseNotAllowed
+from django.http import *
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
@@ -38,6 +38,15 @@ def login_user(request):
 def register_user(request):
 
     req_body = json.loads(request.body.decode())
+
+    email = req_body.get("email")
+    username = req_body.get("username")
+
+    if User.objects.filter(email=email).exists():
+        return JsonResponse({"message": "Email already exists"}, status=400)
+
+    if User.objects.filter(username=username).exists():
+        return JsonResponse({"message": "Username already exists"}, status=400)
 
     new_user = User.objects.create_user(
         username=req_body["username"],
