@@ -26,5 +26,16 @@
       "paint_id": 2,
       "size_id": 2
     }
+  },
+  {
+    "model": "epaintapi.payment",
+    "pk": 1,
+    "fields": {
+      "name": "Visa",
+      "acct_number": "9123-8099-3655-5444",
+      "ex_date": "2029-12-31",
+      "created_date": "2019-01-01",
+      "user_id": 1
+    }
   }
 ]
