@@ -15,6 +15,7 @@ router.register(r"sizes", Sizes, "size")
 router.register(r"cart", Cart, "cart")
 router.register(r"payments", Payments, "payment")
 router.register(r"userimages", UserImages, "userimage")
+router.register(r"userartimages", UserArtImages, "userartimage")
 
 urlpatterns = [
     path("", include(router.urls)),

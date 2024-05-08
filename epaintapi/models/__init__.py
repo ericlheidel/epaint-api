@@ -4,5 +4,6 @@ from .paint import Paint
 from .painttype import PaintType
 from .payment import Payment
 from .size import Size
+from .userartimage import UserArtImage
 from .userimage import UserImage
 from .userinfo import UserInfo

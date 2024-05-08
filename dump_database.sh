@@ -20,7 +20,7 @@
 # python3 manage.py dumpdata epaintapi.payment --indent 2 > epaintapi/fixtures/payments_test.json
 
 # ORDER
-# python3 manage.py dumpdata epaintapi.order --indent 2 > epaintapi/fixtures/orders_test.json
+python3 manage.py dumpdata epaintapi.order --indent 2 > epaintapi/fixtures/orders_test.json
 
 # ORDERPAINT
 # python3 manage.py dumpdata epaintapi.orderpaint --indent 2 > epaintapi/fixtures/orderpaints_test.json
@@ -34,4 +34,4 @@
 # EXAMPLE
 # python manage.py dumpdata epaintapi.orderpaint --indent 2 > epaintapi/fixtures/test.json
 
-echo "no dumps selected"
+# echo "no dumps selected"

@@ -7,4 +7,5 @@ from .painttypes import PaintTypes
 from .payments import Payments
 from .profiles import Profiles
 from .sizes import Sizes
+from .userartimages import UserArtImages
 from .userimages import UserImages
