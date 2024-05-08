@@ -8,6 +8,8 @@ from django.core.files.base import ContentFile
 from epaintapi.models import *
 import base64
 
+#! A user can only have 1 user_image in the db at a time
+
 
 class UserImageSerializer(ModelSerializer):
 
@@ -62,7 +64,7 @@ class UserImages(ViewSet):
         except ValidationError as err:
             return Response({"error": err.args[0]}, status=HTTP_400_BAD_REQUEST)
 
-    def retrieve(self, request, pk=None):
+    def list(self, request):
 
         try:
 
@@ -73,7 +75,7 @@ class UserImages(ViewSet):
             return Response(serializer.data, status=HTTP_200_OK)
 
         except UserImage.DoesNotExist as err:
-            return Response([], status=HTTP_200_OK)
+            return Response(None, status=HTTP_200_OK)
 
         except Exception as err:
             return Response(

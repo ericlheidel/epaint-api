@@ -107,7 +107,7 @@ class Paints(ViewSet):
         paint.save()
 
         return Response(
-            {"message": "Paint successfully update"}, status=HTTP_204_NO_CONTENT
+            {"message": "Paint successfully updated"}, status=HTTP_204_NO_CONTENT
         )
 
     def create(self, request):
