@@ -16,6 +16,7 @@ python3 manage.py loaddata paints_special
 python3 manage.py loaddata sizes
 python3 manage.py loaddata payments
 python3 manage.py loaddata orders
+python3 manage.py loaddata orderpaints
 # python3 manage.py loaddata orders_user1
 # python3 manage.py loaddata orders_user2
 # python3 manage.py loaddata userimages
@@ -27,3 +28,6 @@ python3 manage.py loaddata orders
 
 # here is the command line:
 # python manage.py dumpdata epaintapi.orderpaint --indent 2 > epaintapi/fixtures/test.json
+
+
+# echo "no seeds selected"

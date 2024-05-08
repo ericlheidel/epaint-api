@@ -3,22 +3,39 @@
     "model": "epaintapi.payment",
     "pk": 1,
     "fields": {
+      "deleted": null,
+      "deleted_by_cascade": false,
       "name": "Visa",
-      "acct_number": "9123-8099-3655-5444",
+      "acct_number": "4012-8888-8888-1881",
       "ex_date": "2029-12-31",
       "created_date": "2019-01-01",
-      "user_id": 1
+      "user": 1
     }
   },
   {
     "model": "epaintapi.payment",
     "pk": 2,
     "fields": {
+      "deleted": null,
+      "deleted_by_cascade": false,
       "name": "AMEX",
-      "acct_number": "9999-1111-8888-2222",
+      "acct_number": "3714-4963-5398-4314",
       "ex_date": "2024-04-01",
       "created_date": "2017-01-01",
-      "user_id": 2
+      "user": 1
+    }
+  },
+  {
+    "model": "epaintapi.payment",
+    "pk": 3,
+    "fields": {
+      "deleted": null,
+      "deleted_by_cascade": false,
+      "name": "Mastercard",
+      "acct_number": "5105-1051-0510-5100",
+      "ex_date": "2024-04-01",
+      "created_date": "2017-01-01",
+      "user": 1
     }
   }
 ]
