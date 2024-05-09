@@ -1,14 +1,10 @@
 from django.db.models import *
 from django.contrib.auth.models import User
-from safedelete.models import SafeDeleteModel
-from safedelete.models import SOFT_DELETE
 
 
-class UserImage(SafeDeleteModel):
+class UserImage(Model):
 
-    _safedelete_policy = SOFT_DELETE
-
-    user = OneToOneField(User, on_delete=DO_NOTHING)
+    user = OneToOneField(User, on_delete=CASCADE)
 
     image_path = ImageField(
         upload_to="userimages",

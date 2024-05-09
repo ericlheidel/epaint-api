@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "phone_number": "432-555-9985",
-      "address": "900 1st Ave., Nashville, TN 37377",
+      "address": "100 Wrong Way., Nashville, TN 37377",
       "user": 1
     }
   },
@@ -13,7 +13,7 @@
     "pk": 2,
     "fields": {
       "phone_number": "432-555-3321",
-      "address": "1999 Wrong Way, Nashville, TN 37377",
+      "address": "200 This Way, Nashville, TN 37377",
       "user": 2
     }
   },
@@ -21,8 +21,8 @@
     "model": "epaintapi.userinfo",
     "pk": 3,
     "fields": {
-      "phone_number": "432-555-3321",
-      "address": "200 12 St. N, Nashville, TN 37377",
+      "phone_number": "432-555-4511",
+      "address": "300 That Way, Nashville, TN 37377",
       "user": 3
     }
   }

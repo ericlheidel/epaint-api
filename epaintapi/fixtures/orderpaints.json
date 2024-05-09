@@ -241,41 +241,5 @@
       "paint": 383,
       "size": 3
     }
-  },
-  {
-    "model": "epaintapi.orderpaint",
-    "pk": 28,
-    "fields": {
-      "order": 6,
-      "paint": 16,
-      "size": 2
-    }
-  },
-  {
-    "model": "epaintapi.orderpaint",
-    "pk": 29,
-    "fields": {
-      "order": 6,
-      "paint": 248,
-      "size": 2
-    }
-  },
-  {
-    "model": "epaintapi.orderpaint",
-    "pk": 30,
-    "fields": {
-      "order": 6,
-      "paint": 371,
-      "size": 3
-    }
-  },
-  {
-    "model": "epaintapi.orderpaint",
-    "pk": 31,
-    "fields": {
-      "order": 6,
-      "paint": 381,
-      "size": 1
-    }
   }
 ]
