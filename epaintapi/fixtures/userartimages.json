@@ -84,7 +84,7 @@
     "pk": 11,
     "fields": {
       "user": 2,
-      "image_path": "userartimages/None-9ba45f09651c5b0c404f37a2d2572c026c146620.jpeg"
+      "image_path": "userartimages/None-9ba45f09651c5b0c404f37a2d2572c026c146630.jpeg"
     }
   },
   {
@@ -139,8 +139,8 @@
     "model": "epaintapi.userartimage",
     "pk": 18,
     "fields": {
-      "user": 3,
-      "image_path": "userartimages/None-9ba45f09651c5b0c404f37a2d2572c026c146630.jpeg"
+      "user": 2,
+      "image_path": "userartimages/None-9ba45f09651c5b0c404f37a2d2572c026c146620.jpeg"
     }
   },
   {
