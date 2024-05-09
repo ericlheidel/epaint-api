@@ -17,10 +17,8 @@ python3 manage.py loaddata sizes
 python3 manage.py loaddata payments
 python3 manage.py loaddata orders
 python3 manage.py loaddata orderpaints
-# python3 manage.py loaddata orders_user1
-# python3 manage.py loaddata orders_user2
-# python3 manage.py loaddata userimages
-# python3 manage.py loaddata userartimages
+python3 manage.py loaddata userimages
+python3 manage.py loaddata userartimages
 
 
 # Below is an example of the opposite of the above

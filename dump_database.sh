@@ -20,13 +20,16 @@
 # python3 manage.py dumpdata epaintapi.payment --indent 2 > epaintapi/fixtures/payments_test.json
 
 # ORDER
-python3 manage.py dumpdata epaintapi.order --indent 2 > epaintapi/fixtures/orders_test.json
+# python3 manage.py dumpdata epaintapi.order --indent 2 > epaintapi/fixtures/orders_test.json
 
 # ORDERPAINT
 # python3 manage.py dumpdata epaintapi.orderpaint --indent 2 > epaintapi/fixtures/orderpaints_test.json
 
 # USERIMAGES
-# python3 manage.py dumpdata epaintapi.userimages --indent 2 > epaintapi/fixtures/userimages_test.json
+# python3 manage.py dumpdata epaintapi.userimage --indent 2 > epaintapi/fixtures/userimages_test.json
+
+# USERARTIMAGES
+# python3 manage.py dumpdata epaintapi.userartimage --indent 2 > epaintapi/fixtures/userartimages_test.json
 
 
 
@@ -34,4 +37,4 @@ python3 manage.py dumpdata epaintapi.order --indent 2 > epaintapi/fixtures/order
 # EXAMPLE
 # python manage.py dumpdata epaintapi.orderpaint --indent 2 > epaintapi/fixtures/test.json
 
-# echo "no dumps selected"
+echo "no dumps selected"
