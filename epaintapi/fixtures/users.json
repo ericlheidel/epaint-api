@@ -3,16 +3,52 @@
     "model": "auth.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$720000$1TpO35OZF6elHhrgQvqMaB$lcg+t3tfktcxxRRJnET7J98MgsuM+Jynbdg0Z0vu6Hg=",
+      "password": "pbkdf2_sha256$720000$HDcFyn1PFQCMLUEqBdAJ0b$HazOvQvZXOneoQ2lDYWSj5a8fZYSNBqZ5PnRiUoxZGI=",
       "last_login": null,
       "is_superuser": false,
-      "username": "eric",
-      "first_name": "Eric",
+      "username": "heidel",
+      "first_name": "Heidel",
       "last_name": "Heidel",
-      "email": "eric@ericheidel.com",
+      "email": "heidel@heidel.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2023-10-10T19:12:13.676Z",
+      "date_joined": "2020-09-10T19:12:13.676Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$HDcFyn1PFQCMLUEqBdAJ0b$HazOvQvZXOneoQ2lDYWSj5a8fZYSNBqZ5PnRiUoxZGI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "wolf",
+      "first_name": "Wolf",
+      "last_name": "Wolf",
+      "email": "wolf@wolf.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-09-10T19:12:13.676Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$HDcFyn1PFQCMLUEqBdAJ0b$HazOvQvZXOneoQ2lDYWSj5a8fZYSNBqZ5PnRiUoxZGI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "charlie",
+      "first_name": "Charlie",
+      "last_name": "Kelly",
+      "email": "charlie@charlie.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-09-10T19:12:13.676Z",
       "groups": [],
       "user_permissions": []
     }

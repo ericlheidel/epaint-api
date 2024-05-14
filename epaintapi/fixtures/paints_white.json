@@ -1,0 +1,240 @@
+[
+  {
+    "model": "epaintapi.paint",
+    "pk": 365,
+    "fields": {
+      "color": "Arctica",
+      "paint_number": "5020",
+      "image_one": "WHITE/arctica_1.jpg",
+      "image_two": "WHITE/arctica_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 366,
+    "fields": {
+      "color": "B-52",
+      "paint_number": "7070",
+      "image_one": "WHITE/b_52_1.jpg",
+      "image_two": "WHITE/b_52_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 367,
+    "fields": {
+      "color": "Desert",
+      "paint_number": "1110",
+      "image_one": "WHITE/desert_1.jpg",
+      "image_two": "WHITE/desert_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 368,
+    "fields": {
+      "color": "Fall",
+      "paint_number": "8030",
+      "image_one": "WHITE/fall_1.jpg",
+      "image_two": "WHITE/fall_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 369,
+    "fields": {
+      "color": "Grass Green",
+      "paint_number": "6040",
+      "image_one": "WHITE/grass_green_1.jpg",
+      "image_two": "WHITE/grass_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 370,
+    "fields": {
+      "color": "Greenblack",
+      "paint_number": "6080",
+      "image_one": "WHITE/greenblack_1.jpg",
+      "image_two": "WHITE/greenblack_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 371,
+    "fields": {
+      "color": "Kidney Beans",
+      "paint_number": "4230",
+      "image_one": "WHITE/kidney_beans_1.jpg",
+      "image_two": "WHITE/kidney_beans_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 372,
+    "fields": {
+      "color": "King Kong",
+      "paint_number": "1270",
+      "image_one": "WHITE/king_kong_1.jpg",
+      "image_two": "WHITE/king_kong_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 373,
+    "fields": {
+      "color": "Light Blue",
+      "paint_number": "5030",
+      "image_one": "WHITE/light_blue_1.jpg",
+      "image_two": "WHITE/light_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 374,
+    "fields": {
+      "color": "Oldie",
+      "paint_number": "4020",
+      "image_one": "WHITE/oldie_1.jpg",
+      "image_two": "WHITE/oldie_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 375,
+    "fields": {
+      "color": "Pig",
+      "paint_number": "3320",
+      "image_one": "WHITE/pig_1.jpg",
+      "image_two": "WHITE/pig_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 376,
+    "fields": {
+      "color": "Plaster",
+      "paint_number": "8130",
+      "image_one": "WHITE/plaster_1.jpg",
+      "image_two": "WHITE/plaster_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 377,
+    "fields": {
+      "color": "Rattle Snake",
+      "paint_number": "8020",
+      "image_one": "WHITE/rattle_snake_1.jpg",
+      "image_two": "WHITE/rattle_snake_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 378,
+    "fields": {
+      "color": "Redblack",
+      "paint_number": "3090",
+      "image_one": "WHITE/redblack_1.jpg",
+      "image_two": "WHITE/redblack_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 379,
+    "fields": {
+      "color": "Silver",
+      "paint_number": "9330",
+      "image_one": "WHITE/silver_1.jpg",
+      "image_two": "WHITE/silver_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 380,
+    "fields": {
+      "color": "Squirrel",
+      "paint_number": "8050",
+      "image_one": "WHITE/squirrel_1.jpg",
+      "image_two": "WHITE/squirrel_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 381,
+    "fields": {
+      "color": "Sunset",
+      "paint_number": "2080",
+      "image_one": "WHITE/sunset_1.jpg",
+      "image_two": "WHITE/sunset_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 3
+    }
+  }
+]

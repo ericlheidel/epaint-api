@@ -1,0 +1,2620 @@
+[
+  {
+    "model": "epaintapi.paint",
+    "pk": 1,
+    "fields": {
+      "color": "Acid",
+      "paint_number": "6005",
+      "image_one": "BLACK/acid_1.jpg",
+      "image_two": "BLACK/acid_2.jpg",
+      "hex": "#C6D32E",
+      "rgb": "R198 G211 B46",
+      "cmyk": "C8 M0 Y88 K17",
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 2,
+    "fields": {
+      "color": "After",
+      "paint_number": "8210",
+      "image_one": "BLACK/after_1.jpg",
+      "image_two": "BLACK/after_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 3,
+    "fields": {
+      "color": "Amethyst",
+      "paint_number": "4290",
+      "image_one": "BLACK/amethyst_1.jpg",
+      "image_two": "BLACK/amethyst_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 4,
+    "fields": {
+      "color": "Ant",
+      "paint_number": "7080",
+      "image_one": "BLACK/ant_1.jpg",
+      "image_two": "BLACK/ant_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 5,
+    "fields": {
+      "color": "Arabian",
+      "paint_number": "8110",
+      "image_one": "BLACK/arabian_1.jpg",
+      "image_two": "BLACK/arabian_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 6,
+    "fields": {
+      "color": "Atlantis",
+      "paint_number": "6240",
+      "image_one": "BLACK/atlantis_1.jpg",
+      "image_two": "BLACK/atlantis_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 7,
+    "fields": {
+      "color": "Atoms Megablast",
+      "paint_number": "2120",
+      "image_one": "BLACK/atoms_megablast_1.jpg",
+      "image_two": "BLACK/atoms_megablast_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 8,
+    "fields": {
+      "color": "B.A. Bosko",
+      "paint_number": "1280",
+      "image_one": "BLACK/b.a.bosko_1.jpg",
+      "image_two": "BLACK/b.a.bosko_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 9,
+    "fields": {
+      "color": "Baby Blue",
+      "paint_number": "5020",
+      "image_one": "BLACK/baby_blue_1.jpg",
+      "image_two": "BLACK/baby_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 10,
+    "fields": {
+      "color": "Bamboo",
+      "paint_number": "6610",
+      "image_one": "BLACK/bamboo_1.jpg",
+      "image_two": "BLACK/bamboo_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 11,
+    "fields": {
+      "color": "Banknote",
+      "paint_number": "6065",
+      "image_one": "BLACK/banknote_1.jpg",
+      "image_two": "BLACK/banknote_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 12,
+    "fields": {
+      "color": "Beast",
+      "paint_number": "3148",
+      "image_one": "BLACK/beast_1.jpg",
+      "image_two": "BLACK/beast_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 13,
+    "fields": {
+      "color": "Beetle",
+      "paint_number": "6420",
+      "image_one": "BLACK/beetle_1.jpg",
+      "image_two": "BLACK/beetle_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 14,
+    "fields": {
+      "color": "Beige",
+      "paint_number": "8020",
+      "image_one": "BLACK/beige_1.jpg",
+      "image_two": "BLACK/beige_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 15,
+    "fields": {
+      "color": "Black",
+      "paint_number": "9001",
+      "image_one": "BLACK/black_1.jpg",
+      "image_two": "BLACK/black_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 16,
+    "fields": {
+      "color": "Bloody Mary",
+      "paint_number": "3330",
+      "image_one": "BLACK/bloody_mary_1.jpg",
+      "image_two": "BLACK/bloody_mary_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 17,
+    "fields": {
+      "color": "Blue Lagoon",
+      "paint_number": "5230",
+      "image_one": "BLACK/blue_lagoon_1.jpg",
+      "image_two": "BLACK/blue_lagoon_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 18,
+    "fields": {
+      "color": "Blue Velvet",
+      "paint_number": "3330",
+      "image_one": "BLACK/blue_velvet_1.jpg",
+      "image_two": "BLACK/blue_velvet_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 19,
+    "fields": {
+      "color": "Boa",
+      "paint_number": "6625",
+      "image_one": "BLACK/boa_1.jpg",
+      "image_two": "BLACK/boa_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 20,
+    "fields": {
+      "color": "Bombay",
+      "paint_number": "9999",
+      "image_one": "BLACK/bombay_1.jpg",
+      "image_two": "BLACK/bombay_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 21,
+    "fields": {
+      "color": "Boston",
+      "paint_number": "6055",
+      "image_one": "BLACK/boston_1.jpg",
+      "image_two": "BLACK/boston_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 22,
+    "fields": {
+      "color": "Brunhilde",
+      "paint_number": "4320",
+      "image_one": "BLACK/brunhilde_1.jpg",
+      "image_two": "BLACK/brunhilde_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 23,
+    "fields": {
+      "color": "Bubble Bath",
+      "paint_number": "3995",
+      "image_one": "BLACK/bubble_bath_1.jpg",
+      "image_two": "BLACK/bubble_bath_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 24,
+    "fields": {
+      "color": "Candy Bar",
+      "paint_number": "8250",
+      "image_one": "BLACK/candy_bar_1.jpg",
+      "image_two": "BLACK/candy_bar_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 25,
+    "fields": {
+      "color": "Cardinal",
+      "paint_number": "3062",
+      "image_one": "BLACK/cardinal_1.jpg",
+      "image_two": "BLACK/cardinal_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 26,
+    "fields": {
+      "color": "Celtic",
+      "paint_number": "6060",
+      "image_one": "BLACK/celtic_1.jpg",
+      "image_two": "BLACK/celtic_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 27,
+    "fields": {
+      "color": "Cherry",
+      "paint_number": "3070",
+      "image_one": "BLACK/cherry_1.jpg",
+      "image_two": "BLACK/cherry_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 28,
+    "fields": {
+      "color": "Chocolate",
+      "paint_number": "8060",
+      "image_one": "BLACK/chocolate_1.jpg",
+      "image_two": "BLACK/chocolate_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 29,
+    "fields": {
+      "color": "Clockwork Orange",
+      "paint_number": "2070",
+      "image_one": "BLACK/clockwork_orange_1.jpg",
+      "image_two": "BLACK/clockwork_orange_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 30,
+    "fields": {
+      "color": "Cocktail",
+      "paint_number": "3200",
+      "image_one": "BLACK/cocktail_1.jpg",
+      "image_two": "BLACK/cocktail_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 31,
+    "fields": {
+      "color": "Code Red",
+      "paint_number": "2093",
+      "image_one": "BLACK/code_red_1.jpg",
+      "image_two": "BLACK/code_red_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 32,
+    "fields": {
+      "color": "Cool Cologne",
+      "paint_number": "6130",
+      "image_one": "BLACK/cool_cologne_1.jpg",
+      "image_two": "BLACK/cool_cologne_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 33,
+    "fields": {
+      "color": "Copper Green",
+      "paint_number": "6340",
+      "image_one": "BLACK/copper_green_1.jpg",
+      "image_two": "BLACK/copper_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 34,
+    "fields": {
+      "color": "Copperchrome",
+      "paint_number": "0000",
+      "image_one": "BLACK/copperchrome_1.jpg",
+      "image_two": "BLACK/copperchrome_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 35,
+    "fields": {
+      "color": "Cremino",
+      "paint_number": "8040",
+      "image_one": "BLACK/cremino_1.jpg",
+      "image_two": "BLACK/cremino_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 36,
+    "fields": {
+      "color": "Dark Indigo",
+      "paint_number": "5092",
+      "image_one": "BLACK/dark_indigo_1.jpg",
+      "image_two": "BLACK/dark_indigo_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 37,
+    "fields": {
+      "color": "Dehli",
+      "paint_number": "1130",
+      "image_one": "BLACK/dehli_1.jpg",
+      "image_two": "BLACK/dehli_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 38,
+    "fields": {
+      "color": "Dove",
+      "paint_number": "5125",
+      "image_one": "BLACK/dove_1.jpg",
+      "image_two": "BLACK/dove_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 39,
+    "fields": {
+      "color": "Drops",
+      "paint_number": "6180",
+      "image_one": "BLACK/drops_1.jpg",
+      "image_two": "BLACK/drops_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 40,
+    "fields": {
+      "color": "Dumbo",
+      "paint_number": "7340",
+      "image_one": "BLACK/dumbo_1.jpg",
+      "image_two": "BLACK/dumbo_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 41,
+    "fields": {
+      "color": "Dummy",
+      "paint_number": "4260",
+      "image_one": "BLACK/dummy_1.jpg",
+      "image_two": "BLACK/dummy_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 42,
+    "fields": {
+      "color": "E2E Green",
+      "paint_number": "6210",
+      "image_one": "BLACK/e2e_green_1.jpg",
+      "image_two": "BLACK/e2e_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 43,
+    "fields": {
+      "color": "Easter Yellow",
+      "paint_number": "1010",
+      "image_one": "BLACK/easter_yellow_1.jpg",
+      "image_two": "BLACK/easter_yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 44,
+    "fields": {
+      "color": "Edelgard",
+      "paint_number": "4310",
+      "image_one": "BLACK/edelgard_1.jpg",
+      "image_two": "BLACK/edelgard_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 45,
+    "fields": {
+      "color": "Face",
+      "paint_number": "6905",
+      "image_one": "BLACK/face_1.jpg",
+      "image_two": "BLACK/face_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 46,
+    "fields": {
+      "color": "Falling",
+      "paint_number": "8240",
+      "image_one": "BLACK/falling_1.jpg",
+      "image_two": "BLACK/falling_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 47,
+    "fields": {
+      "color": "Fire Rose",
+      "paint_number": "3020",
+      "image_one": "BLACK/fire_rose_1.jpg",
+      "image_two": "BLACK/fire_rose_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 48,
+    "fields": {
+      "color": "Fog",
+      "paint_number": "6510",
+      "image_one": "BLACK/fog_1.jpg",
+      "image_two": "BLACK/fog_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 49,
+    "fields": {
+      "color": "Frappe",
+      "paint_number": "8050",
+      "image_one": "BLACK/frappe_1.jpg",
+      "image_two": "BLACK/frappe_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 50,
+    "fields": {
+      "color": "Freak",
+      "paint_number": "3105",
+      "image_one": "BLACK/freak_1.jpg",
+      "image_two": "BLACK/freak_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 51,
+    "fields": {
+      "color": "Galaxy",
+      "paint_number": "4060",
+      "image_one": "BLACK/galaxy_1.jpg",
+      "image_two": "BLACK/galaxy_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 52,
+    "fields": {
+      "color": "Gambetta",
+      "paint_number": "7110",
+      "image_one": "BLACK/gambetta_1.jpg",
+      "image_two": "BLACK/gambetta_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 53,
+    "fields": {
+      "color": "Ghetto",
+      "paint_number": "7320",
+      "image_one": "BLACK/ghetto_1.jpg",
+      "image_two": "BLACK/ghetto_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 54,
+    "fields": {
+      "color": "Goby",
+      "paint_number": "8120",
+      "image_one": "BLACK/goby_1.jpg",
+      "image_two": "BLACK/goby_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 55,
+    "fields": {
+      "color": "Goldchrome",
+      "paint_number": "0001",
+      "image_one": "BLACK/goldchrome_1.jpg",
+      "image_two": "BLACK/goldchrome_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 56,
+    "fields": {
+      "color": "Good Times",
+      "paint_number": "3160",
+      "image_one": "BLACK/good_times_1.jpg",
+      "image_two": "BLACK/good_times_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 57,
+    "fields": {
+      "color": "Gut",
+      "paint_number": "4210",
+      "image_one": "BLACK/gut_1.jpg",
+      "image_two": "BLACK/gut_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 58,
+    "fields": {
+      "color": "Halloween",
+      "paint_number": "2085",
+      "image_one": "BLACK/halloween_1.jpg",
+      "image_two": "BLACK/halloween_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 59,
+    "fields": {
+      "color": "Hannibal",
+      "paint_number": "1200",
+      "image_one": "BLACK/hannibal_1.jpg",
+      "image_two": "BLACK/hannibal_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 60,
+    "fields": {
+      "color": "Hazel",
+      "paint_number": "1060",
+      "image_one": "BLACK/hazel_1.jpg",
+      "image_two": "BLACK/hazel_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 61,
+    "fields": {
+      "color": "Hemp",
+      "paint_number": "6620",
+      "image_one": "BLACK/hemp_1.jpg",
+      "image_two": "BLACK/hemp_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 62,
+    "fields": {
+      "color": "Hippie",
+      "paint_number": "6075",
+      "image_one": "BLACK/hippie_1.jpg",
+      "image_two": "BLACK/hippie_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 63,
+    "fields": {
+      "color": "Hope",
+      "paint_number": "6320",
+      "image_one": "BLACK/hope_1.jpg",
+      "image_two": "BLACK/hope_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 64,
+    "fields": {
+      "color": "Horizon",
+      "paint_number": "5070",
+      "image_one": "BLACK/horizon_1.jpg",
+      "image_two": "BLACK/horizon_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 65,
+    "fields": {
+      "color": "Houdini",
+      "paint_number": "7210",
+      "image_one": "BLACK/houdini_1.jpg",
+      "image_two": "BLACK/houdini_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 66,
+    "fields": {
+      "color": "Ice Blue",
+      "paint_number": "5200",
+      "image_one": "BLACK/ice_blue_1.jpg",
+      "image_two": "BLACK/ice_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 67,
+    "fields": {
+      "color": "Iced Coffee",
+      "paint_number": "8030",
+      "image_one": "BLACK/iced_coffee_1.jpg",
+      "image_two": "BLACK/iced_coffee_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 68,
+    "fields": {
+      "color": "Illusion",
+      "paint_number": "3920",
+      "image_one": "BLACK/illusion_1.jpg",
+      "image_two": "BLACK/illusion_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 69,
+    "fields": {
+      "color": "Imperator",
+      "paint_number": "3170",
+      "image_one": "BLACK/imperator_1.jpg",
+      "image_two": "BLACK/imperator_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 70,
+    "fields": {
+      "color": "Indian",
+      "paint_number": "1110",
+      "image_one": "BLACK/indian_1.jpg",
+      "image_two": "BLACK/indian_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 71,
+    "fields": {
+      "color": "Industrillor",
+      "paint_number": "7140",
+      "image_one": "BLACK/industrillor_1.jpg",
+      "image_two": "BLACK/industrillor_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 72,
+    "fields": {
+      "color": "Infra Green",
+      "paint_number": "IN 6000",
+      "image_one": "BLACK/infra_green_1.jpg",
+      "image_two": "BLACK/infra_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 73,
+    "fields": {
+      "color": "Infra Orange",
+      "paint_number": "IN 2000",
+      "image_one": "BLACK/infra_orange_1.jpg",
+      "image_two": "BLACK/infra_orange_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 74,
+    "fields": {
+      "color": "Infra Pink",
+      "paint_number": "IN 4000",
+      "image_one": "BLACK/infra_pink_1.jpg",
+      "image_two": "BLACK/infra_pink_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 75,
+    "fields": {
+      "color": "Infra Red",
+      "paint_number": "IN 3000",
+      "image_one": "BLACK/infra_red_1.jpg",
+      "image_two": "BLACK/infra_red_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 76,
+    "fields": {
+      "color": "Infra Violet",
+      "paint_number": "IN 4500",
+      "image_one": "BLACK/infra_violet_1.jpg",
+      "image_two": "BLACK/infra_violet_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 77,
+    "fields": {
+      "color": "Infra Yellow",
+      "paint_number": "IN 1000",
+      "image_one": "BLACK/infra_yellow_1.jpg",
+      "image_two": "BLACK/infra_yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 78,
+    "fields": {
+      "color": "Irish Green",
+      "paint_number": "6045",
+      "image_one": "BLACK/irish_green_1.jpg",
+      "image_two": "BLACK/irish_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 79,
+    "fields": {
+      "color": "Irmagard",
+      "paint_number": "4340",
+      "image_one": "BLACK/irmagard_1.jpg",
+      "image_two": "BLACK/irmagard_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 80,
+    "fields": {
+      "color": "Ivory",
+      "paint_number": "8000",
+      "image_one": "BLACK/ivory_1.jpg",
+      "image_two": "BLACK/ivory_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 81,
+    "fields": {
+      "color": "Jawa",
+      "paint_number": "8070",
+      "image_one": "BLACK/jawa_1.jpg",
+      "image_two": "BLACK/jawa_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 82,
+    "fields": {
+      "color": "Jaws",
+      "paint_number": "7010",
+      "image_one": "BLACK/jaws_1.jpg",
+      "image_two": "BLACK/jaws_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 83,
+    "fields": {
+      "color": "Juice",
+      "paint_number": "2060",
+      "image_one": "BLACK/juice_1.jpg",
+      "image_two": "BLACK/juice_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 84,
+    "fields": {
+      "color": "Kicking Yellow",
+      "paint_number": "1025",
+      "image_one": "BLACK/kicking_yellow_1.jpg",
+      "image_two": "BLACK/kicking_yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 85,
+    "fields": {
+      "color": "Kidney",
+      "paint_number": "4230",
+      "image_one": "BLACK/kidney_1.jpg",
+      "image_two": "BLACK/kidney_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 86,
+    "fields": {
+      "color": "Knock Out Blue",
+      "paint_number": "5250",
+      "image_one": "BLACK/knock_out_blue_1.jpg",
+      "image_two": "BLACK/knock_out_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 87,
+    "fields": {
+      "color": "Koi",
+      "paint_number": "8230",
+      "image_one": "BLACK/koi_1.jpg",
+      "image_two": "BLACK/koi_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 88,
+    "fields": {
+      "color": "Lambrate",
+      "paint_number": "7130",
+      "image_one": "BLACK/lambrate_1.jpg",
+      "image_two": "BLACK/lambrate_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 89,
+    "fields": {
+      "color": "Lavender",
+      "paint_number": "4115",
+      "image_one": "BLACK/lavender_1.jpg",
+      "image_two": "BLACK/lavender_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 90,
+    "fields": {
+      "color": "Lenor",
+      "paint_number": "5210",
+      "image_one": "BLACK/lenor_1.jpg",
+      "image_two": "BLACK/lenor_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 91,
+    "fields": {
+      "color": "Lenox",
+      "paint_number": "7120",
+      "image_one": "BLACK/lenox_1.jpg",
+      "image_two": "BLACK/lenox_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 92,
+    "fields": {
+      "color": "Light Blue",
+      "paint_number": "5030",
+      "image_one": "BLACK/light_blue_1.jpg",
+      "image_two": "BLACK/light_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 93,
+    "fields": {
+      "color": "Liver",
+      "paint_number": "4250",
+      "image_one": "BLACK/liver_1.jpg",
+      "image_two": "BLACK/liver_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 94,
+    "fields": {
+      "color": "Lollipop",
+      "paint_number": "3320",
+      "image_one": "BLACK/lollipop_1.jpg",
+      "image_two": "BLACK/lollipop_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 95,
+    "fields": {
+      "color": "Lost Island",
+      "paint_number": "1145",
+      "image_one": "BLACK/lost_island_1.jpg",
+      "image_two": "BLACK/lost_island_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 96,
+    "fields": {
+      "color": "Magic",
+      "paint_number": "3940",
+      "image_one": "BLACK/magic_1.jpg",
+      "image_two": "BLACK/magic_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 97,
+    "fields": {
+      "color": "Marlin",
+      "paint_number": "5185",
+      "image_one": "BLACK/marlin_1.jpg",
+      "image_two": "BLACK/marlin_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 98,
+    "fields": {
+      "color": "Maroon",
+      "paint_number": "1080",
+      "image_one": "BLACK/maroon_1.jpg",
+      "image_two": "BLACK/maroon_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 99,
+    "fields": {
+      "color": "Masala",
+      "paint_number": "1120",
+      "image_one": "BLACK/masala_1.jpg",
+      "image_two": "BLACK/masala_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 100,
+    "fields": {
+      "color": "Melon Yellow",
+      "paint_number": "1045",
+      "image_one": "BLACK/melon_yellow_1.jpg",
+      "image_two": "BLACK/melon_yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 101,
+    "fields": {
+      "color": "Merlot",
+      "paint_number": "3065",
+      "image_one": "BLACK/merlot_1.jpg",
+      "image_two": "BLACK/merlot_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 102,
+    "fields": {
+      "color": "Mermaid",
+      "paint_number": "6150",
+      "image_one": "BLACK/mermaid_1.jpg",
+      "image_two": "BLACK/mermaid_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 103,
+    "fields": {
+      "color": "Mescaline",
+      "paint_number": "6080",
+      "image_one": "BLACK/mescaline_1.jpg",
+      "image_two": "BLACK/mescaline_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 104,
+    "fields": {
+      "color": "Miss Piggy",
+      "paint_number": "3100",
+      "image_one": "BLACK/miss_piggy_1.jpg",
+      "image_two": "BLACK/miss_piggy_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 105,
+    "fields": {
+      "color": "Mist",
+      "paint_number": "6520",
+      "image_one": "BLACK/mist_1.jpg",
+      "image_two": "BLACK/mist_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 106,
+    "fields": {
+      "color": "Monster",
+      "paint_number": "4020",
+      "image_one": "BLACK/monster_1.jpg",
+      "image_two": "BLACK/monster_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 107,
+    "fields": {
+      "color": "Morpheus",
+      "paint_number": "7720",
+      "image_one": "BLACK/morpheus_1.jpg",
+      "image_two": "BLACK/morpheus_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 108,
+    "fields": {
+      "color": "Mouse",
+      "paint_number": "7030",
+      "image_one": "BLACK/mouse_1.jpg",
+      "image_two": "BLACK/mouse_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 109,
+    "fields": {
+      "color": "Mr. Crab",
+      "paint_number": "3220",
+      "image_one": "BLACK/mr_crab_1.jpg",
+      "image_two": "BLACK/mr_crab_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 110,
+    "fields": {
+      "color": "Ms. Jackson",
+      "paint_number": "4000",
+      "image_one": "BLACK/ms_jackson_1.jpg",
+      "image_two": "BLACK/ms_jackson_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 111,
+    "fields": {
+      "color": "Mud",
+      "paint_number": "8260",
+      "image_one": "BLACK/mud_1.jpg",
+      "image_two": "BLACK/mud_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 112,
+    "fields": {
+      "color": "Murdock",
+      "paint_number": "1230",
+      "image_one": "BLACK/murdock_1.jpg",
+      "image_two": "BLACK/murdock_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 113,
+    "fields": {
+      "color": "Nappies",
+      "paint_number": "6190",
+      "image_one": "BLACK/nappies_1.jpg",
+      "image_two": "BLACK/nappies_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 114,
+    "fields": {
+      "color": "Neptune",
+      "paint_number": "6170",
+      "image_one": "BLACK/neptune_1.jpg",
+      "image_two": "BLACK/neptune_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 115,
+    "fields": {
+      "color": "Nostradamus",
+      "paint_number": "7230",
+      "image_one": "BLACK/nostradamus_1.jpg",
+      "image_two": "BLACK/nostradamus_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 116,
+    "fields": {
+      "color": "Oasis",
+      "paint_number": "6012",
+      "image_one": "BLACK/oasis_1.jpg",
+      "image_two": "BLACK/oasis_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 117,
+    "fields": {
+      "color": "Olymp",
+      "paint_number": "6310",
+      "image_one": "BLACK/olymp_1.jpg",
+      "image_two": "BLACK/olymp_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 118,
+    "fields": {
+      "color": "Outline Silver",
+      "paint_number": "0002",
+      "image_one": "BLACK/outline_silver_1.jpg",
+      "image_two": "BLACK/outline_silver_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 119,
+    "fields": {
+      "color": "Pan",
+      "paint_number": "6630",
+      "image_one": "BLACK/pan_1.jpg",
+      "image_two": "BLACK/pan_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 120,
+    "fields": {
+      "color": "Patina",
+      "paint_number": "6330",
+      "image_one": "BLACK/patina_1.jpg",
+      "image_two": "BLACK/patina_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 121,
+    "fields": {
+      "color": "Patpong",
+      "paint_number": "3305",
+      "image_one": "BLACK/patpong_1.jpg",
+      "image_two": "BLACK/patpong_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 122,
+    "fields": {
+      "color": "Pear Green",
+      "paint_number": "1130",
+      "image_one": "BLACK/pear_green_1.jpg",
+      "image_two": "BLACK/pear_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 123,
+    "fields": {
+      "color": "Pecan Nut",
+      "paint_number": "1070",
+      "image_one": "BLACK/pecan_nut_1.jpg",
+      "image_two": "BLACK/pecan_nut_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 124,
+    "fields": {
+      "color": "Pimp Violet",
+      "paint_number": "4040",
+      "image_one": "BLACK/pimp_violet_1.jpg",
+      "image_two": "BLACK/pimp_violet_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 125,
+    "fields": {
+      "color": "Pink Cadillac",
+      "paint_number": "3120",
+      "image_one": "BLACK/pink_cadillac_1.jpg",
+      "image_two": "BLACK/pink_cadillac_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 126,
+    "fields": {
+      "color": "Pink Lemonade",
+      "paint_number": "3310",
+      "image_one": "BLACK/pink_lemonade_1.jpg",
+      "image_two": "BLACK/pink_lemonade_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 127,
+    "fields": {
+      "color": "Pink Panther",
+      "paint_number": "3130",
+      "image_one": "BLACK/pink_panther_1.jpg",
+      "image_two": "BLACK/pink_panther_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 128,
+    "fields": {
+      "color": "Pistachio",
+      "paint_number": "6000",
+      "image_one": "BLACK/pistachio_1.jpg",
+      "image_two": "BLACK/pistachio_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 129,
+    "fields": {
+      "color": "Plant",
+      "paint_number": "6095",
+      "image_one": "BLACK/plant_1.jpg",
+      "image_two": "BLACK/plant_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 130,
+    "fields": {
+      "color": "Plum",
+      "paint_number": "4280",
+      "image_one": "BLACK/plum_1.jpg",
+      "image_two": "BLACK/plum_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 131,
+    "fields": {
+      "color": "Power Blue",
+      "paint_number": "P 5000",
+      "image_one": "BLACK/power_blue_1.jpg",
+      "image_two": "BLACK/power_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 132,
+    "fields": {
+      "color": "Power Green",
+      "paint_number": "P 6000",
+      "image_one": "BLACK/power_green_1.jpg",
+      "image_two": "BLACK/power_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 133,
+    "fields": {
+      "color": "Power Orange",
+      "paint_number": "P 2000",
+      "image_one": "BLACK/power_orange_1.jpg",
+      "image_two": "BLACK/power_orange_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 134,
+    "fields": {
+      "color": "Power Pink",
+      "paint_number": "P 4000",
+      "image_one": "BLACK/power_pink_1.jpg",
+      "image_two": "BLACK/power_pink_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 135,
+    "fields": {
+      "color": "Power Red",
+      "paint_number": "P 3000",
+      "image_one": "BLACK/power_red_1.jpg",
+      "image_two": "BLACK/power_red_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 136,
+    "fields": {
+      "color": "Power Violet",
+      "paint_number": "P 4100",
+      "image_one": "BLACK/power_violet_1.jpg",
+      "image_two": "BLACK/power_violet_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 137,
+    "fields": {
+      "color": "Power Yellow",
+      "paint_number": "P 1000",
+      "image_one": "BLACK/power_yellow_1.jpg",
+      "image_two": "BLACK/power_yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 138,
+    "fields": {
+      "color": "Punk Pink",
+      "paint_number": "3145",
+      "image_one": "BLACK/punk_pink_1.jpg",
+      "image_two": "BLACK/punk_pink_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 139,
+    "fields": {
+      "color": "Pure Orange",
+      "paint_number": "2075",
+      "image_one": "BLACK/pure_orange_1.jpg",
+      "image_two": "BLACK/pure_orange_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 140,
+    "fields": {
+      "color": "Purple Rain",
+      "paint_number": "3155",
+      "image_one": "BLACK/purple_rain_1.jpg",
+      "image_two": "BLACK/purple_rain_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 141,
+    "fields": {
+      "color": "Reseda",
+      "paint_number": "6430",
+      "image_one": "BLACK/reseda_1.jpg",
+      "image_two": "BLACK/reseda_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 142,
+    "fields": {
+      "color": "Revolt Green",
+      "paint_number": "6220",
+      "image_one": "BLACK/revolt_green_1.jpg",
+      "image_two": "BLACK/revolt_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 143,
+    "fields": {
+      "color": "Rhino",
+      "paint_number": "7070",
+      "image_one": "BLACK/rhino_1.jpg",
+      "image_two": "BLACK/rhino_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 144,
+    "fields": {
+      "color": "Riffs",
+      "paint_number": "6175",
+      "image_one": "BLACK/riffs_1.jpg",
+      "image_two": "BLACK/riffs_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 145,
+    "fields": {
+      "color": "Royal Blue",
+      "paint_number": "5077",
+      "image_one": "BLACK/royal_blue_1.jpg",
+      "image_two": "BLACK/royal_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 146,
+    "fields": {
+      "color": "Royal Purple",
+      "paint_number": "4155",
+      "image_one": "BLACK/royal_purple_1.jpg",
+      "image_two": "BLACK/royal_purple_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 147,
+    "fields": {
+      "color": "Rust",
+      "paint_number": "8080",
+      "image_one": "BLACK/rust_1.jpg",
+      "image_two": "BLACK/rust_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 148,
+    "fields": {
+      "color": "Sand",
+      "paint_number": "8010",
+      "image_one": "BLACK/sand_1.jpg",
+      "image_two": "BLACK/sand_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 149,
+    "fields": {
+      "color": "Seal",
+      "paint_number": "5140",
+      "image_one": "BLACK/seal_1.jpg",
+      "image_two": "BLACK/seal_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 150,
+    "fields": {
+      "color": "Shark",
+      "paint_number": "7050",
+      "image_one": "BLACK/shark_1.jpg",
+      "image_two": "BLACK/shark_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 151,
+    "fields": {
+      "color": "Silverchrome",
+      "paint_number": "0004",
+      "image_one": "BLACK/silverchrome_1.jpg",
+      "image_two": "BLACK/silverchrome_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 152,
+    "fields": {
+      "color": "Slate",
+      "paint_number": "7360",
+      "image_one": "BLACK/slate_1.jpg",
+      "image_two": "BLACK/slate_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 153,
+    "fields": {
+      "color": "Slimer",
+      "paint_number": "6010",
+      "image_one": "BLACK/slimer_1.jpg",
+      "image_two": "BLACK/slimer_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 154,
+    "fields": {
+      "color": "Smashed Potato",
+      "paint_number": "1005",
+      "image_one": "BLACK/smashed_potato_1.jpg",
+      "image_two": "BLACK/smashed_potato_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 155,
+    "fields": {
+      "color": "Snail",
+      "paint_number": "8220",
+      "image_one": "BLACK/snail_1.jpg",
+      "image_two": "BLACK/snail_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 156,
+    "fields": {
+      "color": "Snow White",
+      "paint_number": "9100",
+      "image_one": "BLACK/snow_white_1.jpg",
+      "image_two": "BLACK/snow_white_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 157,
+    "fields": {
+      "color": "Sorrento Blue",
+      "paint_number": "5270",
+      "image_one": "BLACK/sorrento_blue_1.jpg",
+      "image_two": "BLACK/sorrento_blue_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 158,
+    "fields": {
+      "color": "Space",
+      "paint_number": "5160",
+      "image_one": "BLACK/space_1.jpg",
+      "image_two": "BLACK/space_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 159,
+    "fields": {
+      "color": "Spring",
+      "paint_number": "6013",
+      "image_one": "BLACK/spring_1.jpg",
+      "image_two": "BLACK/spring_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 160,
+    "fields": {
+      "color": "Storm",
+      "paint_number": "6530",
+      "image_one": "BLACK/storm_1.jpg",
+      "image_two": "BLACK/storm_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 161,
+    "fields": {
+      "color": "Surgery",
+      "paint_number": "6195",
+      "image_one": "BLACK/surgery_1.jpg",
+      "image_two": "BLACK/surgery_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 162,
+    "fields": {
+      "color": "Sushi",
+      "paint_number": "3240",
+      "image_one": "BLACK/sushi_1.jpg",
+      "image_two": "BLACK/sushi_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 163,
+    "fields": {
+      "color": "Syrian",
+      "paint_number": "8130",
+      "image_one": "BLACK/syrian_1.jpg",
+      "image_two": "BLACK/syrian_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 164,
+    "fields": {
+      "color": "Tag Green",
+      "paint_number": "6070",
+      "image_one": "BLACK/tag_green_1.jpg",
+      "image_two": "BLACK/tag_green_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 165,
+    "fields": {
+      "color": "Tiffany",
+      "paint_number": "6110",
+      "image_one": "BLACK/tiffany_1.jpg",
+      "image_two": "BLACK/tiffany_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 166,
+    "fields": {
+      "color": "Toad",
+      "paint_number": "6730",
+      "image_one": "BLACK/toad_1.jpg",
+      "image_two": "BLACK/toad_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 167,
+    "fields": {
+      "color": "Tomorrow",
+      "paint_number": "2110",
+      "image_one": "BLACK/tomorrow_1.jpg",
+      "image_two": "BLACK/tomorrow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 168,
+    "fields": {
+      "color": "Topaz",
+      "paint_number": "1050",
+      "image_one": "BLACK/topaz_1.jpg",
+      "image_two": "BLACK/topaz_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 169,
+    "fields": {
+      "color": "Trabi",
+      "paint_number": "6410",
+      "image_one": "BLACK/trabi_1.jpg",
+      "image_two": "BLACK/trabi_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 170,
+    "fields": {
+      "color": "Troops",
+      "paint_number": "6725",
+      "image_one": "BLACK/troops_1.jpg",
+      "image_two": "BLACK/troops_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 171,
+    "fields": {
+      "color": "Trout",
+      "paint_number": "5180",
+      "image_one": "BLACK/trout_1.jpg",
+      "image_two": "BLACK/trout_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 172,
+    "fields": {
+      "color": "True Cyan",
+      "paint_number": "TR 5000",
+      "image_one": "BLACK/true_cyan_1.jpg",
+      "image_two": "BLACK/true_cyan_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 173,
+    "fields": {
+      "color": "True Cyan 50%",
+      "paint_number": "TR 5010",
+      "image_one": "BLACK/true_cyan_50_1.jpg",
+      "image_two": "BLACK/true_cyan_50_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 174,
+    "fields": {
+      "color": "True Magenta",
+      "paint_number": "TR 4000",
+      "image_one": "BLACK/true_magenta_1.jpg",
+      "image_two": "BLACK/true_magenta_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 175,
+    "fields": {
+      "color": "True Magenta 50%",
+      "paint_number": "TR 4010",
+      "image_one": "BLACK/true_magenta_50_1.jpg",
+      "image_two": "BLACK/true_magenta_50_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 176,
+    "fields": {
+      "color": "True Yellow",
+      "paint_number": "TR 1000",
+      "image_one": "BLACK/true_yellow_1.jpg",
+      "image_two": "BLACK/true_yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 177,
+    "fields": {
+      "color": "True Yellow 50%",
+      "paint_number": "TR 1010",
+      "image_one": "BLACK/true_yellow_50_1.jpg",
+      "image_two": "BLACK/true_yellow_50_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 178,
+    "fields": {
+      "color": "Ultramarine",
+      "paint_number": "5080",
+      "image_one": "BLACK/ultramarine_1.jpg",
+      "image_two": "BLACK/ultramarine_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 179,
+    "fields": {
+      "color": "Universe",
+      "paint_number": "4182",
+      "image_one": "BLACK/universe_1.jpg",
+      "image_two": "BLACK/universe_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 180,
+    "fields": {
+      "color": "Waltraut",
+      "paint_number": "4330",
+      "image_one": "BLACK/waltraut_1.jpg",
+      "image_two": "BLACK/waltraut_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 181,
+    "fields": {
+      "color": "Whale",
+      "paint_number": "5190",
+      "image_one": "BLACK/whale_1.jpg",
+      "image_two": "BLACK/whale_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 182,
+    "fields": {
+      "color": "White",
+      "paint_number": "9105",
+      "image_one": "BLACK/white_1.jpg",
+      "image_two": "BLACK/white_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 183,
+    "fields": {
+      "color": "Wild Lime",
+      "paint_number": "6015",
+      "image_one": "BLACK/wild_lime_1.jpg",
+      "image_two": "BLACK/wild_lime_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 184,
+    "fields": {
+      "color": "Wine Gum",
+      "paint_number": "3080",
+      "image_one": "BLACK/wine_gum_1.jpg",
+      "image_two": "BLACK/wine_gum_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 185,
+    "fields": {
+      "color": "Wizard",
+      "paint_number": "4160",
+      "image_one": "BLACK/wizard_1.jpg",
+      "image_two": "BLACK/wizard_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 186,
+    "fields": {
+      "color": "Woodstock",
+      "paint_number": "6090",
+      "image_one": "BLACK/woodstock_1.jpg",
+      "image_two": "BLACK/woodstock_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  },
+  {
+    "model": "epaintapi.paint",
+    "pk": 187,
+    "fields": {
+      "color": "Yellow",
+      "paint_number": "1030",
+      "image_one": "BLACK/yellow_1.jpg",
+      "image_two": "BLACK/yellow_2.jpg",
+      "hex": null,
+      "rgb": null,
+      "cmyk": null,
+      "paint_type_id": 1
+    }
+  }
+]

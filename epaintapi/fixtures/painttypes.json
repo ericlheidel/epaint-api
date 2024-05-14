@@ -3,28 +3,28 @@
     "model": "epaintapi.painttype",
     "pk": 1,
     "fields": {
-      "name": "BLACK"
+      "name": "Black"
     }
   },
   {
     "model": "epaintapi.painttype",
     "pk": 2,
     "fields": {
-      "name": "GOLD"
+      "name": "Gold"
     }
   },
   {
     "model": "epaintapi.painttype",
     "pk": 3,
     "fields": {
-      "name": "WHITE"
+      "name": "White"
     }
   },
   {
     "model": "epaintapi.painttype",
     "pk": 4,
     "fields": {
-      "name": "SPECIAL"
+      "name": "Special"
     }
   }
 ]

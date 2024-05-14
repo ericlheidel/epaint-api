@@ -1,14 +1,14 @@
-from django.db import models
+from django.db.models import *
 from django.contrib.auth.models import User
 
 
-class UserInfo(models.Model):
+class UserInfo(Model):
 
-    user = models.OneToOneField(
+    user = OneToOneField(
         User,
-        on_delete=models.DO_NOTHING,
+        on_delete=DO_NOTHING,
     )
 
-    address = models.CharField(max_length=500)
+    address = CharField(max_length=500)
 
-    phone_number = models.CharField(max_length=15)
+    phone_number = CharField(max_length=15)

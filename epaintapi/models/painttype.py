@@ -1,6 +1,6 @@
-from django.db import models
+from django.db.models import *
 
 
-class PaintType(models.Model):
+class PaintType(Model):
 
-    name = models.CharField(max_length=255, null=False, blank=False)
+    name = CharField(max_length=255, null=False, blank=False)

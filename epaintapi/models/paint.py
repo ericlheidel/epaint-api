@@ -6,7 +6,7 @@ from .painttype import PaintType
 
 class Paint(SafeDeleteModel):
 
-    _safedelete_policy = SOFT_DELETE
+    # _safedelete_policy = SOFT_DELETE
 
     color = models.CharField(max_length=255, null=False, blank=False)
 
