@@ -1,6 +1,14 @@
 [
   {
     "model": "epaintapi.userimage",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "image_path": "userimages/None-9ba45f09651c5b0c404f37a2d2572c026c146610.jpeg"
+    }
+  },
+  {
+    "model": "epaintapi.userimage",
     "pk": 2,
     "fields": {
       "user": 2,
