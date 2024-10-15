@@ -18,7 +18,7 @@ router.register(r"userimages", UserImages, "userimage")
 router.register(r"userartimages", UserArtImages, "userartimage")
 
 urlpatterns = [
-    path("", include(router.urls)),
+    path("api/", include(router.urls)),
     path("register", register_user),
     path("login", login_user),
     path("api-token-auth", obtain_auth_token),
