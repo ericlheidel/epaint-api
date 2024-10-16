@@ -59,11 +59,21 @@ CORS_ORIGIN_WHITELIST = (
     "https://www.paintkillerz.eheidel.com",
 )
 
+# DEVELOPMENT ⬇ DELETE THIS AFTER DEVELOPMENT
+CORS_ALLOW_HEADERS = [
+    "content-type",
+    "authorization",
+    "x-csrftoken",
+    "x-requested-with",
+]
+CORS_ALLOW_METHODS = ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+# DEVELOPMENT ⬆ DELETE THIS AFTER DEVELOPMENT
+
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",

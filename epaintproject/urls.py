@@ -19,8 +19,8 @@ router.register(r"userartimages", UserArtImages, "userartimage")
 
 urlpatterns = [
     path("api/", include(router.urls)),
-    path("register", register_user),
-    path("login", login_user),
+    path("api/register", register_user),
+    path("api/login", login_user),
     path("api-token-auth", obtain_auth_token),
     path("api-auth", include("rest_framework.urls", namespace="rest_framework")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
